@@ -24,6 +24,7 @@ namespace OtelProject.Formlar.Tanımlamalar
         //Database ile Formu bağla
         DbOtelEntities db = new DbOtelEntities();
 
+        /////////////////////////////////////////////////
         private void FrmDurum_Load(object sender, EventArgs e)
         {
             //Durum tablosundaki istediğimiz sütunları belirleme
@@ -40,6 +41,7 @@ namespace OtelProject.Formlar.Tanımlamalar
             bindingSource1.DataSource = db.TblDurum.Local;
         }
 
+        /////////////////////////////////////////////////
         //gridview üzerinden yapılan işlemi kayıt etme
         private void gridView1_CellValueChanged(object sender, DevExpress.XtraGrid.Views.Base.CellValueChangedEventArgs e)
         {
@@ -57,6 +59,9 @@ namespace OtelProject.Formlar.Tanımlamalar
             
         }
 
+        /////////////////////////////////////////////////
+        //sağ tık ile yapılan işemlerin fonksiyonları
+        //durumu sil
         private void durumuSilToolStripMenuItem_Click(object sender, EventArgs e)
         {
             bindingSource1.RemoveCurrent();
@@ -67,10 +72,11 @@ namespace OtelProject.Formlar.Tanımlamalar
         {
 
         }
-
+        //vazgeç
         private void vazgeçToolStripMenuItem_Click(object sender, EventArgs e)
         {
             this.Close();
         }
+        /////////////////////////////////////////////////
     }
 }
