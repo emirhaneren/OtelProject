@@ -21,5 +21,20 @@ namespace OtelProject.Formlar.Personel
         {
 
         }
+
+        private void pictureEdit3_EditValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void groupControl1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void labelControl10_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

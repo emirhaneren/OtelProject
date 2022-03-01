@@ -42,6 +42,8 @@ namespace OtelProject
             this.BtnTelefonTanimlari = new DevExpress.XtraBars.BarButtonItem();
             this.BtnUlkeTanimlari = new DevExpress.XtraBars.BarButtonItem();
             this.BtnUrunGrupTanimlari = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem2 = new DevExpress.XtraBars.BarButtonItem();
+            this.BtnPersonelKarti = new DevExpress.XtraBars.BarButtonItem();
             this.ribbonPage1 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPage2 = new DevExpress.XtraBars.Ribbon.RibbonPage();
@@ -54,8 +56,6 @@ namespace OtelProject
             this.ribbonPageGroup5 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPage6 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup6 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.barButtonItem2 = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonItem3 = new DevExpress.XtraBars.BarButtonItem();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -77,7 +77,7 @@ namespace OtelProject
             this.BtnUlkeTanimlari,
             this.BtnUrunGrupTanimlari,
             this.barButtonItem2,
-            this.barButtonItem3});
+            this.BtnPersonelKarti});
             this.ribbonControl1.Location = new System.Drawing.Point(0, 0);
             this.ribbonControl1.MaxItemId = 14;
             this.ribbonControl1.Name = "ribbonControl1";
@@ -189,6 +189,23 @@ namespace OtelProject
             this.BtnUrunGrupTanimlari.Name = "BtnUrunGrupTanimlari";
             this.BtnUrunGrupTanimlari.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.BtnUrunGrupTanimlari_ItemClick);
             // 
+            // barButtonItem2
+            // 
+            this.barButtonItem2.Caption = "Personel Listesi";
+            this.barButtonItem2.Id = 12;
+            this.barButtonItem2.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem2.ImageOptions.Image")));
+            this.barButtonItem2.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem2.ImageOptions.LargeImage")));
+            this.barButtonItem2.Name = "barButtonItem2";
+            // 
+            // BtnPersonelKarti
+            // 
+            this.BtnPersonelKarti.Caption = "Personel Kartı";
+            this.BtnPersonelKarti.Id = 13;
+            this.BtnPersonelKarti.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem3.ImageOptions.Image")));
+            this.BtnPersonelKarti.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem3.ImageOptions.LargeImage")));
+            this.BtnPersonelKarti.Name = "BtnPersonelKarti";
+            this.BtnPersonelKarti.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.BtnPersonelKarti_ItemClick);
+            // 
             // ribbonPage1
             // 
             this.ribbonPage1.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
@@ -223,7 +240,7 @@ namespace OtelProject
             // ribbonPageGroup3
             // 
             this.ribbonPageGroup3.ItemLinks.Add(this.barButtonItem2);
-            this.ribbonPageGroup3.ItemLinks.Add(this.barButtonItem3);
+            this.ribbonPageGroup3.ItemLinks.Add(this.BtnPersonelKarti);
             this.ribbonPageGroup3.Name = "ribbonPageGroup3";
             // 
             // ribbonPage4
@@ -271,22 +288,6 @@ namespace OtelProject
             this.ribbonPageGroup6.ItemLinks.Add(this.BtnUrunGrupTanimlari);
             this.ribbonPageGroup6.Name = "ribbonPageGroup6";
             // 
-            // barButtonItem2
-            // 
-            this.barButtonItem2.Caption = "Personel Listesi";
-            this.barButtonItem2.Id = 12;
-            this.barButtonItem2.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem2.ImageOptions.Image")));
-            this.barButtonItem2.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem2.ImageOptions.LargeImage")));
-            this.barButtonItem2.Name = "barButtonItem2";
-            // 
-            // barButtonItem3
-            // 
-            this.barButtonItem3.Caption = "Personel Kartı";
-            this.barButtonItem3.Id = 13;
-            this.barButtonItem3.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem3.ImageOptions.Image")));
-            this.barButtonItem3.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem3.ImageOptions.LargeImage")));
-            this.barButtonItem3.Name = "barButtonItem3";
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -331,7 +332,7 @@ namespace OtelProject
         private DevExpress.XtraBars.BarButtonItem BtnUlkeTanimlari;
         private DevExpress.XtraBars.BarButtonItem BtnUrunGrupTanimlari;
         private DevExpress.XtraBars.BarButtonItem barButtonItem2;
-        private DevExpress.XtraBars.BarButtonItem barButtonItem3;
+        private DevExpress.XtraBars.BarButtonItem BtnPersonelKarti;
     }
 }
 

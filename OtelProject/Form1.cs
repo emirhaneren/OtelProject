@@ -60,33 +60,45 @@ namespace OtelProject
             fr.Show();
         }
 
+        //Kur Tanımları
         private void BtnKurTanimlari_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             Formlar.Tanımlamalar.FrmKur fr = new Formlar.Tanımlamalar.FrmKur();
             fr.Show();
         }
 
+        //Oda Tanımları
         private void BtnOdaTanimlari_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             Formlar.Tanımlamalar.FrmOda fr = new Formlar.Tanımlamalar.FrmOda();
             fr.Show();
         }
 
+        //Telefon Tanımları
         private void BtnTelefonTanimlari_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             Formlar.Tanımlamalar.FrmTelefon fr = new Formlar.Tanımlamalar.FrmTelefon();
             fr.Show();
         }
 
+        //Ulke Tanımları
         private void BtnUlkeTanimlari_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             Formlar.Tanımlamalar.FrmUlke fr = new Formlar.Tanımlamalar.FrmUlke();
             fr.Show();
         }
 
+        //Grup Tanımları
         private void BtnUrunGrupTanimlari_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             Formlar.Tanımlamalar.FrmUrunGrup fr = new Formlar.Tanımlamalar.FrmUrunGrup();
+            fr.Show();
+        }
+
+        //Personel Kartı
+        private void BtnPersonelKarti_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Formlar.Personel.FrmPersonelKarti fr = new Formlar.Personel.FrmPersonelKarti();
             fr.Show();
         }
     }
