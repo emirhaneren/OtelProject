@@ -9,11 +9,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace OtelProject.Formlar.Personel
+namespace OtelProject.Formlar.Misafir
 {
-    public partial class FrmPersonelListesi : Form
+    public partial class FrmMisafirListesi : Form
     {
-        public FrmPersonelListesi()
+        public FrmMisafirListesi()
         {
             InitializeComponent();
         }
@@ -21,30 +21,28 @@ namespace OtelProject.Formlar.Personel
         //Database ile Formu bağla
         DbOtelEntities db = new DbOtelEntities();
 
-        //istenilen veriler
-        private void FrmPersonelListesi_Load(object sender, EventArgs e)
+        private void FrmMisafirListesi_Load(object sender, EventArgs e)
         {
-            gridControl1.DataSource = (from x in db.TblPersonel
+            gridControl1.DataSource = (from x in db.TblMisafir
                                        select new
                                        {
-                                           x.PersonelID,
+                                           x.MisafirID,
                                            x.AdSoyad,
                                            x.TC,
                                            x.Telefon,
                                            x.Mail,
-                                           x.TblDepartman.DepartmanAd,
-                                           x.TblGorev.GorevAdı,
-                                           x.TblDurum.DurumAd
-                                       }).ToList(); 
+                                           x.Ulke,
+                                           //x.Sehir,
+                                           //x.Ilce
+                                       }).ToList();
         }
 
-        //formlar arası veri taşıma, Mdi ile listeleme
         private void gridView1_DoubleClick(object sender, EventArgs e)
         {
-            Formlar.Personel.FrmMisafirKarti fr = new FrmMisafirKarti();
+            FrmMisafirKarti fr = new FrmMisafirKarti();
             //odaklanılan satırdaki değei al
-            fr.id = int.Parse(gridView1.GetFocusedRowCellValue("PersonelID").ToString());
+            fr.id = int.Parse(gridView1.GetFocusedRowCellValue("MisafirID").ToString());
             fr.Show();
-         }
+        }
     }
 }

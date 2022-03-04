@@ -32,7 +32,7 @@ namespace OtelProject
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.ribbonControl1 = new DevExpress.XtraBars.Ribbon.RibbonControl();
-            this.barButtonItem1 = new DevExpress.XtraBars.BarButtonItem();
+            this.BtnMisafirListesi = new DevExpress.XtraBars.BarButtonItem();
             this.BtnDurumTanimlari = new DevExpress.XtraBars.BarButtonItem();
             this.BtnBirimTanimlari = new DevExpress.XtraBars.BarButtonItem();
             this.BtnDepartmanTanimlari = new DevExpress.XtraBars.BarButtonItem();
@@ -45,6 +45,7 @@ namespace OtelProject
             this.BtnUrunGrupTanimlari = new DevExpress.XtraBars.BarButtonItem();
             this.BtnPersonelListesi = new DevExpress.XtraBars.BarButtonItem();
             this.BtnPersonelKarti = new DevExpress.XtraBars.BarButtonItem();
+            this.BtnMisafirKarti = new DevExpress.XtraBars.BarButtonItem();
             this.ribbonPage1 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPage2 = new DevExpress.XtraBars.Ribbon.RibbonPage();
@@ -68,7 +69,7 @@ namespace OtelProject
             this.ribbonControl1.Items.AddRange(new DevExpress.XtraBars.BarItem[] {
             this.ribbonControl1.ExpandCollapseItem,
             this.ribbonControl1.SearchEditItem,
-            this.barButtonItem1,
+            this.BtnMisafirListesi,
             this.BtnDurumTanimlari,
             this.BtnBirimTanimlari,
             this.BtnDepartmanTanimlari,
@@ -80,9 +81,10 @@ namespace OtelProject
             this.BtnUlkeTanimlari,
             this.BtnUrunGrupTanimlari,
             this.BtnPersonelListesi,
-            this.BtnPersonelKarti});
+            this.BtnPersonelKarti,
+            this.BtnMisafirKarti});
             this.ribbonControl1.Location = new System.Drawing.Point(0, 0);
-            this.ribbonControl1.MaxItemId = 14;
+            this.ribbonControl1.MaxItemId = 15;
             this.ribbonControl1.Name = "ribbonControl1";
             this.ribbonControl1.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.ribbonPage1,
@@ -93,14 +95,14 @@ namespace OtelProject
             this.ribbonPage6});
             this.ribbonControl1.Size = new System.Drawing.Size(1434, 150);
             // 
-            // barButtonItem1
+            // BtnMisafirListesi
             // 
-            this.barButtonItem1.Caption = "Müşteri Listesi";
-            this.barButtonItem1.Id = 1;
-            this.barButtonItem1.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem1.ImageOptions.Image")));
-            this.barButtonItem1.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem1.ImageOptions.LargeImage")));
-            this.barButtonItem1.Name = "barButtonItem1";
-            this.barButtonItem1.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem1_ItemClick);
+            this.BtnMisafirListesi.Caption = "Misafir Listesi";
+            this.BtnMisafirListesi.Id = 1;
+            this.BtnMisafirListesi.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem1.ImageOptions.Image")));
+            this.BtnMisafirListesi.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem1.ImageOptions.LargeImage")));
+            this.BtnMisafirListesi.Name = "BtnMisafirListesi";
+            this.BtnMisafirListesi.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.BtnMisafirListesi_ItemClick);
             // 
             // BtnDurumTanimlari
             // 
@@ -196,8 +198,8 @@ namespace OtelProject
             // 
             this.BtnPersonelListesi.Caption = "Personel Listesi";
             this.BtnPersonelListesi.Id = 12;
-            this.BtnPersonelListesi.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem2.ImageOptions.Image")));
-            this.BtnPersonelListesi.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem2.ImageOptions.LargeImage")));
+            this.BtnPersonelListesi.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BtnPersonelListesi.ImageOptions.Image")));
+            this.BtnPersonelListesi.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("BtnPersonelListesi.ImageOptions.LargeImage")));
             this.BtnPersonelListesi.Name = "BtnPersonelListesi";
             this.BtnPersonelListesi.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.BtnPersonelListesi_ItemClick);
             // 
@@ -209,6 +211,15 @@ namespace OtelProject
             this.BtnPersonelKarti.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("BtnPersonelKarti.ImageOptions.LargeImage")));
             this.BtnPersonelKarti.Name = "BtnPersonelKarti";
             this.BtnPersonelKarti.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.BtnPersonelKarti_ItemClick);
+            // 
+            // BtnMisafirKarti
+            // 
+            this.BtnMisafirKarti.Caption = "Yeni Misafir Kaydı";
+            this.BtnMisafirKarti.Id = 14;
+            this.BtnMisafirKarti.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BtnMisafirKarti.ImageOptions.Image")));
+            this.BtnMisafirKarti.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("BtnMisafirKarti.ImageOptions.LargeImage")));
+            this.BtnMisafirKarti.Name = "BtnMisafirKarti";
+            this.BtnMisafirKarti.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.BtnMisafirKarti_ItemClick);
             // 
             // ribbonPage1
             // 
@@ -231,7 +242,8 @@ namespace OtelProject
             // 
             // ribbonPageGroup2
             // 
-            this.ribbonPageGroup2.ItemLinks.Add(this.barButtonItem1);
+            this.ribbonPageGroup2.ItemLinks.Add(this.BtnMisafirListesi);
+            this.ribbonPageGroup2.ItemLinks.Add(this.BtnMisafirKarti);
             this.ribbonPageGroup2.Name = "ribbonPageGroup2";
             // 
             // ribbonPage3
@@ -320,7 +332,7 @@ namespace OtelProject
         private DevExpress.XtraBars.Ribbon.RibbonControl ribbonControl1;
         private DevExpress.XtraBars.Ribbon.RibbonPage ribbonPage1;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup1;
-        private DevExpress.XtraBars.BarButtonItem barButtonItem1;
+        private DevExpress.XtraBars.BarButtonItem BtnMisafirListesi;
         private DevExpress.XtraBars.Ribbon.RibbonPage ribbonPage2;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup2;
         private DevExpress.XtraBars.Ribbon.RibbonPage ribbonPage3;
@@ -344,6 +356,7 @@ namespace OtelProject
         private DevExpress.XtraBars.BarButtonItem BtnPersonelListesi;
         private DevExpress.XtraBars.BarButtonItem BtnPersonelKarti;
         private DevExpress.XtraTabbedMdi.XtraTabbedMdiManager xtraTabbedMdiManager1;
+        private DevExpress.XtraBars.BarButtonItem BtnMisafirKarti;
     }
 }
 

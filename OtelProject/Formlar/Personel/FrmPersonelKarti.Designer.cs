@@ -1,7 +1,7 @@
 ﻿
 namespace OtelProject.Formlar.Personel
 {
-    partial class FrmPersonelKarti
+    partial class FrmMisafirKarti
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@ namespace OtelProject.Formlar.Personel
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmPersonelKarti));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmMisafirKarti));
             this.pictureEdit1 = new DevExpress.XtraEditors.PictureEdit();
             this.TxtAdSoyad = new DevExpress.XtraEditors.TextEdit();
             this.lookUpEditDepartman = new DevExpress.XtraEditors.LookUpEdit();

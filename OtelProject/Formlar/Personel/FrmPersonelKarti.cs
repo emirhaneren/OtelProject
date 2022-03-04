@@ -13,9 +13,9 @@ using System.Windows.Forms;
 
 namespace OtelProject.Formlar.Personel
 {
-    public partial class FrmPersonelKarti : Form
+    public partial class FrmMisafirKarti : Form
     {
-        public FrmPersonelKarti()
+        public FrmMisafirKarti()
         {
             InitializeComponent();
         }

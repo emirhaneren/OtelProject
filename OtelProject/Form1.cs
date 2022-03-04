@@ -17,9 +17,12 @@ namespace OtelProject
             InitializeComponent();
         }
 
-        private void barButtonItem1_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        //Misafir Listesi
+        private void BtnMisafirListesi_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-
+            Formlar.Misafir.FrmMisafirListesi fr = new Formlar.Misafir.FrmMisafirListesi();
+            fr.MdiParent = this;
+            fr.Show();
         }
 
         //DurumTanımları
@@ -98,14 +101,22 @@ namespace OtelProject
         //Personel Kartı
         private void BtnPersonelKarti_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            Formlar.Personel.FrmPersonelKarti fr = new Formlar.Personel.FrmPersonelKarti();
+            Formlar.Personel.FrmMisafirKarti fr = new Formlar.Personel.FrmMisafirKarti();
             fr.Show();
         }
 
+        //Personel Listesi
         private void BtnPersonelListesi_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             Formlar.Personel.FrmPersonelListesi fr = new Formlar.Personel.FrmPersonelListesi();
             fr.MdiParent = this;
+            fr.Show();
+        }
+
+        //Personel Karti
+        private void BtnMisafirKarti_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Formlar.Misafir.FrmMisafirKarti fr = new Formlar.Misafir.FrmMisafirKarti();
             fr.Show();
         }
     }
