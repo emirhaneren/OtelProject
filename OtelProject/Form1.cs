@@ -152,5 +152,46 @@ namespace OtelProject
             Formlar.Urun.FrmUrunHareketTanimi fr = new Formlar.Urun.FrmUrunHareketTanimi();
             fr.Show();
         }
+
+        private void BtnnRezervasyonKarti_ItemClick_1(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Formlar.Rezervasyon.FrmRezervasyonKarti fr = new Formlar.Rezervasyon.FrmRezervasyonKarti();
+            fr.Show();
+        }
+
+        private void BtnnTumRezervasyon_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Formlar.Rezervasyon.FrmTumRezervasyonlar fr = new Formlar.Rezervasyon.FrmTumRezervasyonlar();
+            fr.MdiParent = this;
+            fr.Show();
+        }
+
+        private void BtnAktifRezervsayon_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Formlar.Rezervasyon.FrmAktifRezervasyon fr = new Formlar.Rezervasyon.FrmAktifRezervasyon();
+            fr.MdiParent = this;
+            fr.Show();
+        }
+
+        private void BtnİptalRezervasyon_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Formlar.Rezervasyon.FtmIptalRezervasyon fr = new Formlar.Rezervasyon.FtmIptalRezervasyon();
+            fr.MdiParent = this;
+            fr.Show();
+        }
+
+        private void BtnGecmisRezervasyon_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Formlar.Rezervasyon.FrmGecmisRezervasyonlar fr = new Formlar.Rezervasyon.FrmGecmisRezervasyonlar();
+            fr.MdiParent = this;
+            fr.Show();
+        }
+
+        private void BtnGelecekRezervasyon_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Formlar.Rezervasyon.FrmGelecekRezervasyon fr = new Formlar.Rezervasyon.FrmGelecekRezervasyon();
+            fr.MdiParent = this;
+            fr.Show();
+        }
     }
 }
