@@ -43,5 +43,7 @@ namespace OtelProject.Entity
         public virtual DbSet<iller> iller { get; set; }
         public virtual DbSet<TblUrunHareket> TblUrunHareket { get; set; }
         public virtual DbSet<TblRezervasyon> TblRezervasyon { get; set; }
+        public virtual DbSet<TblYeniKayit> TblYeniKayit { get; set; }
+        public virtual DbSet<TblOnRezervasyon> TblOnRezervasyon { get; set; }
     }
 }

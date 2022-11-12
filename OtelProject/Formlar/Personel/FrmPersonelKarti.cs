@@ -108,7 +108,7 @@ namespace OtelProject.Formlar.Personel
             t.KimlikArka = pictureEditKimlikArka.GetLoadedImageLocation();
 
             repo.TAdd(t);
-            XtraMessageBox.Show("Personel başarılı bir şekilde sisteme kaydedildi");
+            XtraMessageBox.Show("Personel başarılı bir şekilde sisteme kaydedildi","Bilgi",MessageBoxButtons.OK,MessageBoxIcon.Warning);
         }
 
         private void lookUpEditGorev_EditValueChanged(object sender, EventArgs e)

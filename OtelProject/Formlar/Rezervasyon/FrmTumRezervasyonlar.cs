@@ -36,5 +36,12 @@ namespace OtelProject.Formlar.Rezervasyon
                                            x.TblDurum.DurumAd,
                                        }).ToList();
         }
+
+        private void gridView1_DoubleClick(object sender, EventArgs e)
+        {
+            FrmRezervasyonKarti fr = new FrmRezervasyonKarti();
+            fr.id = int.Parse(gridView1.GetFocusedRowCellValue("RezervasyonID").ToString());
+            fr.Show();
+        }
     }
 }

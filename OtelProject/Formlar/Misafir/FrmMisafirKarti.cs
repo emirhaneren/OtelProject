@@ -31,33 +31,38 @@ namespace OtelProject.Formlar.Misafir
 
         private void FrmMisafirKarti_Load(object sender, EventArgs e)
         {
-            //Güncelenecek kart bilgileri
-            if (id != 0)
+            try
             {
-                var misafir = repo.Find(x => x.MisafirID == id);
-                TxtAdSoyad.Text = misafir.AdSoyad;
-                TxtTc.Text = misafir.TC;
-                TxtAdres.Text = misafir.Adres;
-                TxtTelefon.Text = misafir.Telefon;
-                TxtMail.Text = misafir.Mail;
-                TxtAciklama.Text = misafir.Aciklama;
-                pictureEditKimlikOn.Image = Image.FromFile(misafir.KimlikFoto1);
-                pictureEditKimlikArka.Image = Image.FromFile(misafir.KimlikFoto2);
-                lookUpEditSehir.EditValue = misafir.Sehir;
-                lookUpEditUlke.EditValue = misafir.Ulke;
-                lookUpEditIlce.EditValue = misafir.Ilce;
-                
-                //labellara image konumları ataması
-                resim1 = misafir.KimlikFoto1;
-                resim2 = misafir.KimlikFoto2;
+                //Güncelenecek kart bilgileri
+                if (id != 0)
+                {
+                    var misafir = repo.Find(x => x.MisafirID == id);
+                    TxtAdSoyad.Text = misafir.AdSoyad;
+                    TxtTc.Text = misafir.TC;
+                    TxtAdres.Text = misafir.Adres;
+                    TxtTelefon.Text = misafir.Telefon;
+                    TxtMail.Text = misafir.Mail;
+                    TxtAciklama.Text = misafir.Aciklama;
+                    pictureEditKimlikOn.Image = Image.FromFile(misafir.KimlikFoto1);
+                    pictureEditKimlikArka.Image = Image.FromFile(misafir.KimlikFoto2);
+                    lookUpEditSehir.EditValue = misafir.Sehir;
+                    lookUpEditUlke.EditValue = misafir.Ulke;
+                    lookUpEditIlce.EditValue = misafir.Ilce;
+
+                    //labellara image konumları ataması
+                    resim1 = misafir.KimlikFoto1;
+                    resim2 = misafir.KimlikFoto2;
+                }
             }
+            catch (Exception)
+            {
 
-
-
+                XtraMessageBox.Show("Bir hata oluştu lütfen sütunları kontrol edin.","Hata",MessageBoxButtons.OK,MessageBoxIcon.Stop);
+            }
             //Ulke Listesi
             lookUpEditUlke.Properties.DataSource = (from x in db.TblUlke select new { x.UlkeID, x.UlkeAd }).ToList();
             //Şehir Listesi,Anonymus Type
-            lookUpEditSehir.Properties.DataSource = (from x in db.iller select new {ID= x.id, Şehir= x.sehir }).ToList();
+            lookUpEditSehir.Properties.DataSource = (from x in db.iller select new { ID = x.id, Şehir = x.sehir }).ToList();
         }
 
         private void lookUpEditSehir_EditValueChanged(object sender, EventArgs e)

@@ -1,7 +1,7 @@
 ﻿
-namespace OtelProject.Formlar.Rezervasyon
+namespace OtelProject.Formlar.WebSite
 {
-    partial class FrmTumRezervasyonlar
+    partial class FrmOnRezervasyon
     {
         /// <summary>
         /// Required designer variable.
@@ -41,8 +41,8 @@ namespace OtelProject.Formlar.Rezervasyon
             this.gridControl1.Location = new System.Drawing.Point(0, 0);
             this.gridControl1.MainView = this.gridView1;
             this.gridControl1.Name = "gridControl1";
-            this.gridControl1.Size = new System.Drawing.Size(1184, 461);
-            this.gridControl1.TabIndex = 2;
+            this.gridControl1.Size = new System.Drawing.Size(1168, 422);
+            this.gridControl1.TabIndex = 5;
             this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
             // 
@@ -53,18 +53,15 @@ namespace OtelProject.Formlar.Rezervasyon
             this.gridView1.OptionsView.ShowGroupPanel = false;
             this.gridView1.DoubleClick += new System.EventHandler(this.gridView1_DoubleClick);
             // 
-            // FrmTumRezervasyonlar
+            // FrmOnRezervasyon
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1184, 461);
+            this.ClientSize = new System.Drawing.Size(1168, 422);
             this.Controls.Add(this.gridControl1);
-            this.MaximizeBox = false;
-            this.MinimizeBox = false;
-            this.Name = "FrmTumRezervasyonlar";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Tüm Rezervasyonlar";
-            this.Load += new System.EventHandler(this.FrmTumRezervasyonlar_Load);
+            this.Name = "FrmOnRezervasyon";
+            this.Text = "Ön Rezervasyonlar";
+            this.Load += new System.EventHandler(this.FrmOnRezervasyon_Load);
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
             this.ResumeLayout(false);

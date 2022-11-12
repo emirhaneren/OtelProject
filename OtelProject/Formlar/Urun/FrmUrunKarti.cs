@@ -89,5 +89,25 @@ namespace OtelProject.Formlar.Urun
             repo.TUpdate(urundeger);
             XtraMessageBox.Show("Ürün Kartı Bilgileri Başarıyla Güncellendi", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Warning);
         }
+
+        private void rdb1_CheckedChanged(object sender, EventArgs e)
+        {
+            TxtKdv.Text = "1";
+        }
+
+        private void rdb2_CheckedChanged(object sender, EventArgs e)
+        {
+            TxtKdv.Text = "8";
+        }
+
+        private void rdb3_CheckedChanged(object sender, EventArgs e)
+        {
+            TxtKdv.Text = "10";
+        }
+
+        private void rdb4_CheckedChanged(object sender, EventArgs e)
+        {
+            TxtKdv.Text = "18";
+        }
     }
 }

@@ -31,6 +31,11 @@ namespace OtelProject.Formlar.Urun
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmUrunKarti));
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
+            this.rdb4 = new System.Windows.Forms.RadioButton();
+            this.rdb3 = new System.Windows.Forms.RadioButton();
+            this.rdb2 = new System.Windows.Forms.RadioButton();
+            this.rdb1 = new System.Windows.Forms.RadioButton();
+            this.labelControl9 = new DevExpress.XtraEditors.LabelControl();
             this.TxtKdv = new DevExpress.XtraEditors.TextEdit();
             this.labelControl7 = new DevExpress.XtraEditors.LabelControl();
             this.pictureEdit3 = new DevExpress.XtraEditors.PictureEdit();
@@ -54,14 +59,9 @@ namespace OtelProject.Formlar.Urun
             this.pictureEdit7 = new DevExpress.XtraEditors.PictureEdit();
             this.lookUpEditDurum = new DevExpress.XtraEditors.LookUpEdit();
             this.groupControl6 = new DevExpress.XtraEditors.GroupControl();
-            this.labelControl9 = new DevExpress.XtraEditors.LabelControl();
-            this.rdb1 = new System.Windows.Forms.RadioButton();
-            this.rdb2 = new System.Windows.Forms.RadioButton();
-            this.rdb3 = new System.Windows.Forms.RadioButton();
-            this.rdb4 = new System.Windows.Forms.RadioButton();
-            this.pictureEdit13 = new DevExpress.XtraEditors.PictureEdit();
-            this.labelControl13 = new DevExpress.XtraEditors.LabelControl();
             this.TxtAciklama = new DevExpress.XtraEditors.MemoEdit();
+            this.labelControl13 = new DevExpress.XtraEditors.LabelControl();
+            this.pictureEdit13 = new DevExpress.XtraEditors.PictureEdit();
             this.groupControl2 = new DevExpress.XtraEditors.GroupControl();
             this.groupControl7 = new DevExpress.XtraEditors.GroupControl();
             this.BtnGuncelle = new DevExpress.XtraEditors.SimpleButton();
@@ -85,8 +85,8 @@ namespace OtelProject.Formlar.Urun
             ((System.ComponentModel.ISupportInitialize)(this.lookUpEditDurum.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl6)).BeginInit();
             this.groupControl6.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit13.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.TxtAciklama.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit13.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl2)).BeginInit();
             this.groupControl2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl7)).BeginInit();
@@ -119,6 +119,62 @@ namespace OtelProject.Formlar.Urun
             this.groupControl1.Size = new System.Drawing.Size(484, 107);
             this.groupControl1.TabIndex = 8;
             this.groupControl1.Text = "groupControl1";
+            // 
+            // rdb4
+            // 
+            this.rdb4.AutoSize = true;
+            this.rdb4.Location = new System.Drawing.Point(404, 77);
+            this.rdb4.Name = "rdb4";
+            this.rdb4.Size = new System.Drawing.Size(48, 17);
+            this.rdb4.TabIndex = 27;
+            this.rdb4.TabStop = true;
+            this.rdb4.Text = "%18";
+            this.rdb4.UseVisualStyleBackColor = true;
+            this.rdb4.CheckedChanged += new System.EventHandler(this.rdb4_CheckedChanged);
+            // 
+            // rdb3
+            // 
+            this.rdb3.AutoSize = true;
+            this.rdb3.Location = new System.Drawing.Point(350, 77);
+            this.rdb3.Name = "rdb3";
+            this.rdb3.Size = new System.Drawing.Size(48, 17);
+            this.rdb3.TabIndex = 26;
+            this.rdb3.TabStop = true;
+            this.rdb3.Text = "%10";
+            this.rdb3.UseVisualStyleBackColor = true;
+            this.rdb3.CheckedChanged += new System.EventHandler(this.rdb3_CheckedChanged);
+            // 
+            // rdb2
+            // 
+            this.rdb2.AutoSize = true;
+            this.rdb2.Location = new System.Drawing.Point(302, 77);
+            this.rdb2.Name = "rdb2";
+            this.rdb2.Size = new System.Drawing.Size(42, 17);
+            this.rdb2.TabIndex = 25;
+            this.rdb2.TabStop = true;
+            this.rdb2.Text = "%8";
+            this.rdb2.UseVisualStyleBackColor = true;
+            this.rdb2.CheckedChanged += new System.EventHandler(this.rdb2_CheckedChanged);
+            // 
+            // rdb1
+            // 
+            this.rdb1.AutoSize = true;
+            this.rdb1.Location = new System.Drawing.Point(254, 77);
+            this.rdb1.Name = "rdb1";
+            this.rdb1.Size = new System.Drawing.Size(42, 17);
+            this.rdb1.TabIndex = 24;
+            this.rdb1.TabStop = true;
+            this.rdb1.Text = "%1";
+            this.rdb1.UseVisualStyleBackColor = true;
+            this.rdb1.CheckedChanged += new System.EventHandler(this.rdb1_CheckedChanged);
+            // 
+            // labelControl9
+            // 
+            this.labelControl9.Location = new System.Drawing.Point(285, 45);
+            this.labelControl9.Name = "labelControl9";
+            this.labelControl9.Size = new System.Drawing.Size(34, 13);
+            this.labelControl9.TabIndex = 23;
+            this.labelControl9.Text = "Toplam";
             // 
             // TxtKdv
             // 
@@ -349,57 +405,20 @@ namespace OtelProject.Formlar.Urun
             this.groupControl6.TabIndex = 9;
             this.groupControl6.Text = "groupControl6";
             // 
-            // labelControl9
+            // TxtAciklama
             // 
-            this.labelControl9.Location = new System.Drawing.Point(285, 45);
-            this.labelControl9.Name = "labelControl9";
-            this.labelControl9.Size = new System.Drawing.Size(34, 13);
-            this.labelControl9.TabIndex = 23;
-            this.labelControl9.Text = "Toplam";
+            this.TxtAciklama.Location = new System.Drawing.Point(93, 4);
+            this.TxtAciklama.Name = "TxtAciklama";
+            this.TxtAciklama.Size = new System.Drawing.Size(386, 105);
+            this.TxtAciklama.TabIndex = 4;
             // 
-            // rdb1
+            // labelControl13
             // 
-            this.rdb1.AutoSize = true;
-            this.rdb1.Location = new System.Drawing.Point(254, 77);
-            this.rdb1.Name = "rdb1";
-            this.rdb1.Size = new System.Drawing.Size(42, 17);
-            this.rdb1.TabIndex = 24;
-            this.rdb1.TabStop = true;
-            this.rdb1.Text = "%1";
-            this.rdb1.UseVisualStyleBackColor = true;
-            // 
-            // rdb2
-            // 
-            this.rdb2.AutoSize = true;
-            this.rdb2.Location = new System.Drawing.Point(302, 77);
-            this.rdb2.Name = "rdb2";
-            this.rdb2.Size = new System.Drawing.Size(42, 17);
-            this.rdb2.TabIndex = 25;
-            this.rdb2.TabStop = true;
-            this.rdb2.Text = "%8";
-            this.rdb2.UseVisualStyleBackColor = true;
-            // 
-            // rdb3
-            // 
-            this.rdb3.AutoSize = true;
-            this.rdb3.Location = new System.Drawing.Point(350, 77);
-            this.rdb3.Name = "rdb3";
-            this.rdb3.Size = new System.Drawing.Size(48, 17);
-            this.rdb3.TabIndex = 26;
-            this.rdb3.TabStop = true;
-            this.rdb3.Text = "%10";
-            this.rdb3.UseVisualStyleBackColor = true;
-            // 
-            // rdb4
-            // 
-            this.rdb4.AutoSize = true;
-            this.rdb4.Location = new System.Drawing.Point(404, 77);
-            this.rdb4.Name = "rdb4";
-            this.rdb4.Size = new System.Drawing.Size(48, 17);
-            this.rdb4.TabIndex = 27;
-            this.rdb4.TabStop = true;
-            this.rdb4.Text = "%18";
-            this.rdb4.UseVisualStyleBackColor = true;
+            this.labelControl13.Location = new System.Drawing.Point(38, 13);
+            this.labelControl13.Name = "labelControl13";
+            this.labelControl13.Size = new System.Drawing.Size(41, 13);
+            this.labelControl13.TabIndex = 3;
+            this.labelControl13.Text = "Açıklama";
             // 
             // pictureEdit13
             // 
@@ -413,21 +432,6 @@ namespace OtelProject.Formlar.Urun
             this.pictureEdit13.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Stretch;
             this.pictureEdit13.Size = new System.Drawing.Size(25, 25);
             this.pictureEdit13.TabIndex = 2;
-            // 
-            // labelControl13
-            // 
-            this.labelControl13.Location = new System.Drawing.Point(38, 13);
-            this.labelControl13.Name = "labelControl13";
-            this.labelControl13.Size = new System.Drawing.Size(41, 13);
-            this.labelControl13.TabIndex = 3;
-            this.labelControl13.Text = "Açıklama";
-            // 
-            // TxtAciklama
-            // 
-            this.TxtAciklama.Location = new System.Drawing.Point(93, 4);
-            this.TxtAciklama.Name = "TxtAciklama";
-            this.TxtAciklama.Size = new System.Drawing.Size(386, 105);
-            this.TxtAciklama.TabIndex = 4;
             // 
             // groupControl2
             // 
@@ -524,8 +528,8 @@ namespace OtelProject.Formlar.Urun
             ((System.ComponentModel.ISupportInitialize)(this.groupControl6)).EndInit();
             this.groupControl6.ResumeLayout(false);
             this.groupControl6.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit13.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.TxtAciklama.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit13.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl2)).EndInit();
             this.groupControl2.ResumeLayout(false);
             this.groupControl2.PerformLayout();
