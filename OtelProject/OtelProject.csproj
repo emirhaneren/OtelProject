@@ -98,13 +98,28 @@
     <Compile Include="Entity\TblDurum.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
+    <Compile Include="Entity\TblEkibimiz.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
     <Compile Include="Entity\TblGorev.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entity\TblHakkimda.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entity\Tbliletisim.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Entity\TblKasa.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Entity\TblKur.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entity\TblMesaj.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entity\TblMesaj2.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Entity\TblMisafir.cs">
@@ -314,6 +329,42 @@
     <Compile Include="Formlar\Urun\FrmUrunListesi.Designer.cs">
       <DependentUpon>FrmUrunListesi.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formlar\WebSite\FrmGelenMesajlar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\WebSite\FrmGelenMesajlar.Designer.cs">
+      <DependentUpon>FrmGelenMesajlar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formlar\WebSite\FrmGidenMesajlar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\WebSite\FrmGidenMesajlar.Designer.cs">
+      <DependentUpon>FrmGidenMesajlar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formlar\WebSite\FrmHakkimizda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\WebSite\FrmHakkimizda.Designer.cs">
+      <DependentUpon>FrmHakkimizda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formlar\WebSite\FrmIletisim.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\WebSite\FrmIletisim.Designer.cs">
+      <DependentUpon>FrmIletisim.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formlar\WebSite\FrmAdresKarti.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\WebSite\FrmAdresKarti.Designer.cs">
+      <DependentUpon>FrmAdresKarti.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formlar\WebSite\FrmMesajKarti.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\WebSite\FrmMesajKarti.Designer.cs">
+      <DependentUpon>FrmMesajKarti.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formlar\WebSite\FrmOnRezervasyon.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -421,6 +472,24 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formlar\Urun\FrmUrunListesi.resx">
       <DependentUpon>FrmUrunListesi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\WebSite\FrmGelenMesajlar.resx">
+      <DependentUpon>FrmGelenMesajlar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\WebSite\FrmGidenMesajlar.resx">
+      <DependentUpon>FrmGidenMesajlar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\WebSite\FrmHakkimizda.resx">
+      <DependentUpon>FrmHakkimizda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\WebSite\FrmIletisim.resx">
+      <DependentUpon>FrmIletisim.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\WebSite\FrmAdresKarti.resx">
+      <DependentUpon>FrmAdresKarti.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\WebSite\FrmMesajKarti.resx">
+      <DependentUpon>FrmMesajKarti.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formlar\WebSite\FrmOnRezervasyon.resx">
       <DependentUpon>FrmOnRezervasyon.cs</DependentUpon>

@@ -243,5 +243,47 @@ namespace OtelProject
             fr.MdiParent = this;
             fr.Show();
         }
+
+        private void BtnGelenMesajlar_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Formlar.WebSite.FrmGelenMesajlar fr = new Formlar.WebSite.FrmGelenMesajlar();
+            fr.MdiParent = this;
+            fr.Show();
+        }
+
+        private void BtnYeniMesaj_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Formlar.WebSite.FrmMesajKarti fr = new Formlar.WebSite.FrmMesajKarti();
+            fr.Show();
+        }
+
+        private void BtnGidenMesajlar_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Formlar.WebSite.FrmGidenMesajlar fr = new Formlar.WebSite.FrmGidenMesajlar();
+            fr.MdiParent = this;
+            fr.Show();
+        }
+
+        //İletisim Karti
+        private void barButtonItem1_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Formlar.WebSite.FrmIletisim fr = new Formlar.WebSite.FrmIletisim();
+            fr.MdiParent = this;
+            fr.Show();
+        }
+
+        //AdresKartı
+        private void barButtonItem1_ItemClick_1(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Formlar.WebSite.FrmAdresKarti fr = new Formlar.WebSite.FrmAdresKarti();
+            fr.Show();
+        }
+
+        //Hakkımda Kartı
+        private void barButtonItem2_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Formlar.WebSite.FrmHakkimizda fr = new Formlar.WebSite.FrmHakkimizda();
+            fr.Show();
+        }
     }
 }
