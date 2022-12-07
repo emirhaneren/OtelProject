@@ -79,6 +79,7 @@ namespace OtelProject
             this.BtnHakkimdaKarti = new DevExpress.XtraBars.BarButtonItem();
             this.BtnAnaForm = new DevExpress.XtraBars.BarButtonItem();
             this.BtnUrunStokGrafigi = new DevExpress.XtraBars.BarButtonItem();
+            this.BtnOdaDolulukGrafigi = new DevExpress.XtraBars.BarButtonItem();
             this.ribbonPage1 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPage2 = new DevExpress.XtraBars.Ribbon.RibbonPage();
@@ -107,7 +108,6 @@ namespace OtelProject
             this.xtraTabbedMdiManager1 = new DevExpress.XtraTabbedMdi.XtraTabbedMdiManager(this.components);
             this.ribbonPageGroup10 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup11 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.BtnGrafik1 = new DevExpress.XtraBars.BarButtonItem();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabbedMdiManager1)).BeginInit();
             this.SuspendLayout();
@@ -165,7 +165,7 @@ namespace OtelProject
             this.BtnHakkimdaKarti,
             this.BtnAnaForm,
             this.BtnUrunStokGrafigi,
-            this.BtnGrafik1});
+            this.BtnOdaDolulukGrafigi});
             this.ribbonControl1.Location = new System.Drawing.Point(0, 0);
             this.ribbonControl1.MaxItemId = 51;
             this.ribbonControl1.Name = "ribbonControl1";
@@ -593,10 +593,19 @@ namespace OtelProject
             // 
             this.BtnUrunStokGrafigi.Caption = "Ürün-Stok Grafiği";
             this.BtnUrunStokGrafigi.Id = 49;
-            this.BtnUrunStokGrafigi.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem1.ImageOptions.Image")));
-            this.BtnUrunStokGrafigi.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem1.ImageOptions.LargeImage")));
+            this.BtnUrunStokGrafigi.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BtnUrunStokGrafigi.ImageOptions.Image")));
+            this.BtnUrunStokGrafigi.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("BtnUrunStokGrafigi.ImageOptions.LargeImage")));
             this.BtnUrunStokGrafigi.Name = "BtnUrunStokGrafigi";
             this.BtnUrunStokGrafigi.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.BtnUrunStokGrafigi_ItemClick);
+            // 
+            // BtnOdaDolulukGrafigi
+            // 
+            this.BtnOdaDolulukGrafigi.Caption = "Oda Doluluk Grafiği";
+            this.BtnOdaDolulukGrafigi.Id = 50;
+            this.BtnOdaDolulukGrafigi.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BtnGrafik1.ImageOptions.Image")));
+            this.BtnOdaDolulukGrafigi.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("BtnGrafik1.ImageOptions.LargeImage")));
+            this.BtnOdaDolulukGrafigi.Name = "BtnOdaDolulukGrafigi";
+            this.BtnOdaDolulukGrafigi.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem2_ItemClick_1);
             // 
             // ribbonPage1
             // 
@@ -737,7 +746,7 @@ namespace OtelProject
             // ribbonPageGroup18
             // 
             this.ribbonPageGroup18.ItemLinks.Add(this.BtnUrunStokGrafigi);
-            this.ribbonPageGroup18.ItemLinks.Add(this.BtnGrafik1);
+            this.ribbonPageGroup18.ItemLinks.Add(this.BtnOdaDolulukGrafigi);
             this.ribbonPageGroup18.Name = "ribbonPageGroup18";
             // 
             // ribbonPage8
@@ -794,15 +803,6 @@ namespace OtelProject
             this.ribbonPageGroup11.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("ribbonPageGroup11.ImageOptions.Image")));
             this.ribbonPageGroup11.Name = "ribbonPageGroup11";
             this.ribbonPageGroup11.Text = "Aktif Rezervasyonlar";
-            // 
-            // BtnGrafik1
-            // 
-            this.BtnGrafik1.Caption = "Oda Doluluk Grafiği";
-            this.BtnGrafik1.Id = 50;
-            this.BtnGrafik1.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem2.ImageOptions.Image")));
-            this.BtnGrafik1.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem2.ImageOptions.LargeImage")));
-            this.BtnGrafik1.Name = "BtnGrafik1";
-            this.BtnGrafik1.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem2_ItemClick_1);
             // 
             // Form1
             // 
@@ -902,7 +902,7 @@ namespace OtelProject
         private DevExpress.XtraBars.BarButtonItem BtnUrunStokGrafigi;
         private DevExpress.XtraBars.Ribbon.RibbonPage ribbonPage9;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup18;
-        private DevExpress.XtraBars.BarButtonItem BtnGrafik1;
+        private DevExpress.XtraBars.BarButtonItem BtnOdaDolulukGrafigi;
     }
 }
 
