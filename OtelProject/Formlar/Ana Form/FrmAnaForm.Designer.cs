@@ -46,8 +46,8 @@ namespace OtelProject.Formlar.Ana_Form
             this.gridControl4 = new DevExpress.XtraGrid.GridControl();
             this.gridView4 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.groupControl5 = new DevExpress.XtraEditors.GroupControl();
-            this.groupControl6 = new DevExpress.XtraEditors.GroupControl();
             this.chartControl1 = new DevExpress.XtraCharts.ChartControl();
+            this.groupControl6 = new DevExpress.XtraEditors.GroupControl();
             this.chartControl2 = new DevExpress.XtraCharts.ChartControl();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
@@ -67,11 +67,11 @@ namespace OtelProject.Formlar.Ana_Form
             ((System.ComponentModel.ISupportInitialize)(this.gridView4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl5)).BeginInit();
             this.groupControl5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.groupControl6)).BeginInit();
-            this.groupControl6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chartControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(xyDiagram1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(series1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.groupControl6)).BeginInit();
+            this.groupControl6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chartControl2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(series2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(pieSeriesView1)).BeginInit();
@@ -190,15 +190,6 @@ namespace OtelProject.Formlar.Ana_Form
             this.groupControl5.TabIndex = 6;
             this.groupControl5.Text = "Grafik 1";
             // 
-            // groupControl6
-            // 
-            this.groupControl6.Controls.Add(this.chartControl2);
-            this.groupControl6.Location = new System.Drawing.Point(868, 210);
-            this.groupControl6.Name = "groupControl6";
-            this.groupControl6.Size = new System.Drawing.Size(520, 220);
-            this.groupControl6.TabIndex = 7;
-            this.groupControl6.Text = "Oda Doluluk Grafiği";
-            // 
             // chartControl1
             // 
             xyDiagram1.AxisX.VisibleInPanesSerializable = "-1";
@@ -213,12 +204,21 @@ namespace OtelProject.Formlar.Ana_Form
             this.chartControl1.Size = new System.Drawing.Size(518, 173);
             this.chartControl1.TabIndex = 0;
             // 
+            // groupControl6
+            // 
+            this.groupControl6.Controls.Add(this.chartControl2);
+            this.groupControl6.Location = new System.Drawing.Point(868, 210);
+            this.groupControl6.Name = "groupControl6";
+            this.groupControl6.Size = new System.Drawing.Size(520, 220);
+            this.groupControl6.TabIndex = 7;
+            this.groupControl6.Text = "Oda Doluluk Grafiği";
+            // 
             // chartControl2
             // 
             this.chartControl2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.chartControl2.Location = new System.Drawing.Point(2, 23);
             this.chartControl2.Name = "chartControl2";
-            series2.Name = "Series 1";
+            series2.Name = "Durumlar";
             series2.View = pieSeriesView1;
             this.chartControl2.SeriesSerializable = new DevExpress.XtraCharts.Series[] {
         series2};
@@ -259,11 +259,11 @@ namespace OtelProject.Formlar.Ana_Form
             ((System.ComponentModel.ISupportInitialize)(this.gridView4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl5)).EndInit();
             this.groupControl5.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.groupControl6)).EndInit();
-            this.groupControl6.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(xyDiagram1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(series1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.chartControl1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.groupControl6)).EndInit();
+            this.groupControl6.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(pieSeriesView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(series2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.chartControl2)).EndInit();
