@@ -288,7 +288,9 @@ namespace OtelProject
 
         private void BtnAnaForm_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            
+            Formlar.Ana_Form.FrmAnaForm fr = new Formlar.Ana_Form.FrmAnaForm();
+            fr.MdiParent = this;
+            fr.Show();
         }
 
         private void Form1_Load(object sender, EventArgs e)
