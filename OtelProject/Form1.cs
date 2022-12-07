@@ -300,7 +300,9 @@ namespace OtelProject
 
         private void barButtonItem2_ItemClick_1(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-           
+            Formlar.Grafikler.FrmOdaDolulukGrafigi fr = new Formlar.Grafikler.FrmOdaDolulukGrafigi();
+            fr.MdiParent = this;
+            fr.Show();
         }
 
         private void BtnUrunStokGrafigi_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)

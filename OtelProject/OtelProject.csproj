@@ -193,6 +193,12 @@
     <Compile Include="Formlar\Araclar\FrmYoutube.Designer.cs">
       <DependentUpon>FrmYoutube.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formlar\Grafikler\FrmOdaDolulukGrafigi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\Grafikler\FrmOdaDolulukGrafigi.Designer.cs">
+      <DependentUpon>FrmOdaDolulukGrafigi.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formlar\Misafir\FrmMisafirKarti.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -414,6 +420,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formlar\Araclar\FrmYoutube.resx">
       <DependentUpon>FrmYoutube.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\Grafikler\FrmOdaDolulukGrafigi.resx">
+      <DependentUpon>FrmOdaDolulukGrafigi.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formlar\Misafir\FrmMisafirKarti.resx">
       <DependentUpon>FrmMisafirKarti.cs</DependentUpon>
