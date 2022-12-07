@@ -29,10 +29,10 @@ namespace OtelProject.Formlar.Ana_Form
         /// </summary>
         private void InitializeComponent()
         {
-            DevExpress.XtraCharts.XYDiagram xyDiagram1 = new DevExpress.XtraCharts.XYDiagram();
-            DevExpress.XtraCharts.Series series1 = new DevExpress.XtraCharts.Series();
-            DevExpress.XtraCharts.Series series2 = new DevExpress.XtraCharts.Series();
-            DevExpress.XtraCharts.PieSeriesView pieSeriesView1 = new DevExpress.XtraCharts.PieSeriesView();
+            DevExpress.XtraCharts.XYDiagram xyDiagram5 = new DevExpress.XtraCharts.XYDiagram();
+            DevExpress.XtraCharts.Series series9 = new DevExpress.XtraCharts.Series();
+            DevExpress.XtraCharts.Series series10 = new DevExpress.XtraCharts.Series();
+            DevExpress.XtraCharts.PieSeriesView pieSeriesView5 = new DevExpress.XtraCharts.PieSeriesView();
             this.gridControl1 = new DevExpress.XtraGrid.GridControl();
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
@@ -70,11 +70,11 @@ namespace OtelProject.Formlar.Ana_Form
             ((System.ComponentModel.ISupportInitialize)(this.groupControl6)).BeginInit();
             this.groupControl6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chartControl1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(xyDiagram1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(series1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(xyDiagram5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(series9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chartControl2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(series2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(pieSeriesView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(series10)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(pieSeriesView5)).BeginInit();
             this.SuspendLayout();
             // 
             // gridControl1
@@ -83,7 +83,7 @@ namespace OtelProject.Formlar.Ana_Form
             this.gridControl1.Location = new System.Drawing.Point(2, 23);
             this.gridControl1.MainView = this.gridView1;
             this.gridControl1.Name = "gridControl1";
-            this.gridControl1.Size = new System.Drawing.Size(346, 195);
+            this.gridControl1.Size = new System.Drawing.Size(415, 173);
             this.gridControl1.TabIndex = 1;
             this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
@@ -99,18 +99,18 @@ namespace OtelProject.Formlar.Ana_Form
             this.groupControl1.Controls.Add(this.gridControl1);
             this.groupControl1.Location = new System.Drawing.Point(6, 6);
             this.groupControl1.Name = "groupControl1";
-            this.groupControl1.Size = new System.Drawing.Size(350, 220);
+            this.groupControl1.Size = new System.Drawing.Size(419, 198);
             this.groupControl1.TabIndex = 2;
             this.groupControl1.Text = "Ürün-Stok Listesi";
             // 
             // groupControl2
             // 
             this.groupControl2.Controls.Add(this.gridControl2);
-            this.groupControl2.Location = new System.Drawing.Point(6, 232);
+            this.groupControl2.Location = new System.Drawing.Point(4, 210);
             this.groupControl2.Name = "groupControl2";
-            this.groupControl2.Size = new System.Drawing.Size(350, 220);
+            this.groupControl2.Size = new System.Drawing.Size(421, 220);
             this.groupControl2.TabIndex = 3;
-            this.groupControl2.Text = "Ürün-Stok Listesi";
+            this.groupControl2.Text = "Bugün Gelecek Misafirler";
             // 
             // gridControl2
             // 
@@ -118,7 +118,7 @@ namespace OtelProject.Formlar.Ana_Form
             this.gridControl2.Location = new System.Drawing.Point(2, 23);
             this.gridControl2.MainView = this.gridView2;
             this.gridControl2.Name = "gridControl2";
-            this.gridControl2.Size = new System.Drawing.Size(346, 195);
+            this.gridControl2.Size = new System.Drawing.Size(417, 195);
             this.gridControl2.TabIndex = 1;
             this.gridControl2.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView2});
@@ -132,11 +132,11 @@ namespace OtelProject.Formlar.Ana_Form
             // groupControl3
             // 
             this.groupControl3.Controls.Add(this.gridControl3);
-            this.groupControl3.Location = new System.Drawing.Point(362, 6);
+            this.groupControl3.Location = new System.Drawing.Point(431, 6);
             this.groupControl3.Name = "groupControl3";
-            this.groupControl3.Size = new System.Drawing.Size(350, 220);
+            this.groupControl3.Size = new System.Drawing.Size(429, 198);
             this.groupControl3.TabIndex = 4;
-            this.groupControl3.Text = "Ürün-Stok Listesi";
+            this.groupControl3.Text = "Misafir Listesi";
             // 
             // gridControl3
             // 
@@ -144,7 +144,7 @@ namespace OtelProject.Formlar.Ana_Form
             this.gridControl3.Location = new System.Drawing.Point(2, 23);
             this.gridControl3.MainView = this.gridView3;
             this.gridControl3.Name = "gridControl3";
-            this.gridControl3.Size = new System.Drawing.Size(346, 195);
+            this.gridControl3.Size = new System.Drawing.Size(425, 173);
             this.gridControl3.TabIndex = 1;
             this.gridControl3.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView3});
@@ -158,11 +158,11 @@ namespace OtelProject.Formlar.Ana_Form
             // groupControl4
             // 
             this.groupControl4.Controls.Add(this.gridControl4);
-            this.groupControl4.Location = new System.Drawing.Point(364, 232);
+            this.groupControl4.Location = new System.Drawing.Point(433, 210);
             this.groupControl4.Name = "groupControl4";
-            this.groupControl4.Size = new System.Drawing.Size(350, 220);
+            this.groupControl4.Size = new System.Drawing.Size(425, 220);
             this.groupControl4.TabIndex = 5;
-            this.groupControl4.Text = "Ürün-Stok Listesi";
+            this.groupControl4.Text = "Mesaj Listesi";
             // 
             // gridControl4
             // 
@@ -170,7 +170,7 @@ namespace OtelProject.Formlar.Ana_Form
             this.gridControl4.Location = new System.Drawing.Point(2, 23);
             this.gridControl4.MainView = this.gridView4;
             this.gridControl4.Name = "gridControl4";
-            this.gridControl4.Size = new System.Drawing.Size(346, 195);
+            this.gridControl4.Size = new System.Drawing.Size(421, 195);
             this.gridControl4.TabIndex = 1;
             this.gridControl4.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView4});
@@ -184,33 +184,33 @@ namespace OtelProject.Formlar.Ana_Form
             // groupControl5
             // 
             this.groupControl5.Controls.Add(this.chartControl1);
-            this.groupControl5.Location = new System.Drawing.Point(718, 6);
+            this.groupControl5.Location = new System.Drawing.Point(866, 6);
             this.groupControl5.Name = "groupControl5";
-            this.groupControl5.Size = new System.Drawing.Size(454, 220);
+            this.groupControl5.Size = new System.Drawing.Size(522, 198);
             this.groupControl5.TabIndex = 6;
-            this.groupControl5.Text = "Ürün-Stok Listesi";
+            this.groupControl5.Text = "Grafik 1";
             // 
             // groupControl6
             // 
             this.groupControl6.Controls.Add(this.chartControl2);
-            this.groupControl6.Location = new System.Drawing.Point(720, 232);
+            this.groupControl6.Location = new System.Drawing.Point(868, 210);
             this.groupControl6.Name = "groupControl6";
-            this.groupControl6.Size = new System.Drawing.Size(452, 220);
+            this.groupControl6.Size = new System.Drawing.Size(520, 220);
             this.groupControl6.TabIndex = 7;
-            this.groupControl6.Text = "Ürün-Stok Listesi";
+            this.groupControl6.Text = "Oda Doluluk Grafiği";
             // 
             // chartControl1
             // 
-            xyDiagram1.AxisX.VisibleInPanesSerializable = "-1";
-            xyDiagram1.AxisY.VisibleInPanesSerializable = "-1";
-            this.chartControl1.Diagram = xyDiagram1;
+            xyDiagram5.AxisX.VisibleInPanesSerializable = "-1";
+            xyDiagram5.AxisY.VisibleInPanesSerializable = "-1";
+            this.chartControl1.Diagram = xyDiagram5;
             this.chartControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.chartControl1.Location = new System.Drawing.Point(2, 23);
             this.chartControl1.Name = "chartControl1";
-            series1.Name = "Series 1";
+            series9.Name = "Series 1";
             this.chartControl1.SeriesSerializable = new DevExpress.XtraCharts.Series[] {
-        series1};
-            this.chartControl1.Size = new System.Drawing.Size(450, 195);
+        series9};
+            this.chartControl1.Size = new System.Drawing.Size(518, 173);
             this.chartControl1.TabIndex = 0;
             // 
             // chartControl2
@@ -218,11 +218,11 @@ namespace OtelProject.Formlar.Ana_Form
             this.chartControl2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.chartControl2.Location = new System.Drawing.Point(2, 23);
             this.chartControl2.Name = "chartControl2";
-            series2.Name = "Series 1";
-            series2.View = pieSeriesView1;
+            series10.Name = "Series 1";
+            series10.View = pieSeriesView5;
             this.chartControl2.SeriesSerializable = new DevExpress.XtraCharts.Series[] {
-        series2};
-            this.chartControl2.Size = new System.Drawing.Size(448, 195);
+        series10};
+            this.chartControl2.Size = new System.Drawing.Size(516, 195);
             this.chartControl2.TabIndex = 0;
             // 
             // FrmAnaForm
@@ -260,11 +260,11 @@ namespace OtelProject.Formlar.Ana_Form
             this.groupControl5.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.groupControl6)).EndInit();
             this.groupControl6.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(xyDiagram1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(series1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(xyDiagram5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(series9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.chartControl1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(pieSeriesView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(series2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(pieSeriesView5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(series10)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.chartControl2)).EndInit();
             this.ResumeLayout(false);
 
