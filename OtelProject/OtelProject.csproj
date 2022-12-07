@@ -172,6 +172,12 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formlar\Admin\FrmAdminListesi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\Admin\FrmAdminListesi.Designer.cs">
+      <DependentUpon>FrmAdminListesi.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formlar\Admin\FrmGiris.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -183,6 +189,12 @@
     </Compile>
     <Compile Include="Formlar\Admin\FrmSifreIslemleri.Designer.cs">
       <DependentUpon>FrmSifreIslemleri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formlar\Admin\SplashScreen1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\Admin\SplashScreen1.Designer.cs">
+      <DependentUpon>SplashScreen1.cs</DependentUpon>
     </Compile>
     <Compile Include="Formlar\Ana Form\FrmAnaForm.cs">
       <SubType>Form</SubType>
@@ -430,11 +442,17 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\Admin\FrmAdminListesi.resx">
+      <DependentUpon>FrmAdminListesi.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Formlar\Admin\FrmGiris.resx">
       <DependentUpon>FrmGiris.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formlar\Admin\FrmSifreIslemleri.resx">
       <DependentUpon>FrmSifreIslemleri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\Admin\SplashScreen1.resx">
+      <DependentUpon>SplashScreen1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formlar\Ana Form\FrmAnaForm.resx">
       <DependentUpon>FrmAnaForm.cs</DependentUpon>

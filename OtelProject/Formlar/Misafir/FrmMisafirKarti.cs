@@ -43,15 +43,17 @@ namespace OtelProject.Formlar.Misafir
                     TxtTelefon.Text = misafir.Telefon;
                     TxtMail.Text = misafir.Mail;
                     TxtAciklama.Text = misafir.Aciklama;
-                    pictureEditKimlikOn.Image = Image.FromFile(misafir.KimlikFoto1);
-                    pictureEditKimlikArka.Image = Image.FromFile(misafir.KimlikFoto2);
                     lookUpEditSehir.EditValue = misafir.Sehir;
                     lookUpEditUlke.EditValue = misafir.Ulke;
                     lookUpEditIlce.EditValue = misafir.Ilce;
 
+                    pictureEditKimlikOn.Image = Image.FromFile(misafir.KimlikFoto1);
+                    pictureEditKimlikArka.Image = Image.FromFile(misafir.KimlikFoto2);
+
                     //labellara image konumları ataması
                     resim1 = misafir.KimlikFoto1;
                     resim2 = misafir.KimlikFoto2;
+
                 }
             }
             catch (Exception)
@@ -112,21 +114,30 @@ namespace OtelProject.Formlar.Misafir
         //Yeni misafir kayıt
         private void BtnKaydet_Click(object sender, EventArgs e)
         {
-            t.AdSoyad = TxtAdSoyad.Text;
-            t.TC = TxtTc.Text;
-            t.Telefon = TxtTelefon.Text;
-            t.Mail = TxtMail.Text;
-            t.Adres = TxtAdres.Text;
-            t.Aciklama = TxtAciklama.Text;
-            t.Durum = 1;
-            t.Sehir = int.Parse(lookUpEditSehir.EditValue.ToString());
-            t.Ilce = int.Parse(lookUpEditIlce.EditValue.ToString());
-            t.Ulke = int.Parse(lookUpEditUlke.EditValue.ToString());
-            t.KimlikFoto1 = resim1;
-            t.KimlikFoto2 = resim2;
+            if(pictureEditKimlikArka.Image!=null && pictureEditKimlikOn.Image!=null)
+            {
+                //fluent validation ?
+                t.AdSoyad = TxtAdSoyad.Text;
+                t.TC = TxtTc.Text;
+                t.Telefon = TxtTelefon.Text;
+                t.Mail = TxtMail.Text;
+                t.Adres = TxtAdres.Text;
+                t.Aciklama = TxtAciklama.Text;
+                t.Durum = 1;
+                t.Sehir = int.Parse(lookUpEditSehir.EditValue.ToString());
+                t.Ilce = int.Parse(lookUpEditIlce.EditValue.ToString());
+                t.Ulke = int.Parse(lookUpEditUlke.EditValue.ToString());
+                t.KimlikFoto1 = resim1;
+                t.KimlikFoto2 = resim2;
 
-            repo.TAdd(t);
-            XtraMessageBox.Show("Misafir sistme başarılı bir şekilde kaydedildi", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                repo.TAdd(t);
+                XtraMessageBox.Show("Misafir sistme başarılı bir şekilde kaydedildi", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+                XtraMessageBox.Show("Lütfen bilgileri eksiksiz doldurun.", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+            }
+            
         }
     }
 }

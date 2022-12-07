@@ -52,7 +52,7 @@ namespace OtelProject.Formlar.Personel
         //lookup editleri bağlama
         private void FrmPersonelKarti_Load(object sender, EventArgs e)
         {
-            this.Text = id.ToString();
+            //this.Text = id.ToString();
             
             //personel listesinde çift tıklayınca personel kartının dolu gelmesi
             if (id != 0)

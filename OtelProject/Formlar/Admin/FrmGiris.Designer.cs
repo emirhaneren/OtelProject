@@ -30,6 +30,7 @@ namespace OtelProject.Formlar.Admin
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmGiris));
+            DevExpress.XtraSplashScreen.SplashScreenManager splashScreenManager1 = new DevExpress.XtraSplashScreen.SplashScreenManager(this, typeof(global::OtelProject.Formlar.Admin.SplashScreen1), true, true);
             this.BtnGiris = new DevExpress.XtraEditors.SimpleButton();
             this.groupControl4 = new DevExpress.XtraEditors.GroupControl();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
@@ -49,7 +50,7 @@ namespace OtelProject.Formlar.Admin
             // BtnGiris
             // 
             this.BtnGiris.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BtnGiris.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BtnVazgec.ImageOptions.Image")));
+            this.BtnGiris.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BtnGiris.ImageOptions.Image")));
             this.BtnGiris.Location = new System.Drawing.Point(112, 83);
             this.BtnGiris.Name = "BtnGiris";
             this.BtnGiris.Size = new System.Drawing.Size(138, 41);
@@ -131,6 +132,10 @@ namespace OtelProject.Formlar.Admin
             this.txtKullanici.Size = new System.Drawing.Size(136, 20);
             this.txtKullanici.TabIndex = 1;
             // 
+            // splashScreenManager1
+            // 
+            splashScreenManager1.ClosingDelay = 500;
+            // 
             // FrmGiris
             // 
             this.AcceptButton = this.BtnGiris;
@@ -142,6 +147,7 @@ namespace OtelProject.Formlar.Admin
             this.Name = "FrmGiris";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmGiris";
+            this.Load += new System.EventHandler(this.FrmGiris_Load);
             ((System.ComponentModel.ISupportInitialize)(this.groupControl4)).EndInit();
             this.groupControl4.ResumeLayout(false);
             this.groupControl4.PerformLayout();

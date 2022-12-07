@@ -62,10 +62,14 @@ namespace OtelProject.Formlar.Rezervasyon
                 TxtTelefon.Text = rezervasyon.Telefon;
                 lookUpEditDurum.EditValue = rezervasyon.Durum;
                 TxtAciklama.Text = rezervasyon.Aciklama;
+                txtToplam.Text = rezervasyon.Toplam.ToString();
+
 
                 lookUpEditKisi1.EditValue = rezervasyon.Kisi1;
                 lookUpEditKisi2.EditValue = rezervasyon.Kisi2;
                 lookUpEditKisi3.EditValue = rezervasyon.Kisi3;
+
+                txtOdaNo.Text = rezervasyon.TblOda.OdaNo;
             }
 
         }
@@ -111,6 +115,7 @@ namespace OtelProject.Formlar.Rezervasyon
             t.Telefon = TxtTelefon.Text;
             t.Aciklama = TxtAciklama.Text;
             t.Durum =int.Parse(lookUpEditDurum.EditValue.ToString());
+            t.Toplam = decimal.Parse(txtToplam.Text);
             repo.TAdd(t);
             XtraMessageBox.Show("Rezervasyon başarılı bir şekilde oluşturuldu", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
@@ -134,12 +139,22 @@ namespace OtelProject.Formlar.Rezervasyon
         {
             var rezervasyon = repo.Find(x => x.RezervasyonID == id);
 
+            //Çıkıştan sonra odanın durumunu değiştirme
+            Repository<TblOda> repo2 = new Repository<TblOda>();
+            if(lookUpEditDurum.Text=="Çıkış Yapıldı")
+            {
+                var odadurum = repo2.Find(x => x.OdaID == rezervasyon.Oda);
+                odadurum.Durum = 3;
+                repo2.TUpdate(odadurum);
+            }
+           
             rezervasyon.GirisTarih = DateTime.Parse(dateEditGiris.Text);
             rezervasyon.CikisTarih = DateTime.Parse(dateEditCikis.Text);
             rezervasyon.Kisi = numericUpDown1.Value.ToString();
             rezervasyon.Oda = int.Parse(lookUpEditOda.EditValue.ToString());
             rezervasyon.Telefon = TxtTelefon.Text;
             rezervasyon.Durum = int.Parse(lookUpEditDurum.EditValue.ToString());
+            rezervasyon.Toplam = decimal.Parse(txtToplam.Text);
 
             if (numericUpDown1.Value == 1)
             {
@@ -163,10 +178,14 @@ namespace OtelProject.Formlar.Rezervasyon
                 rezervasyon.Kisi2 = int.Parse(lookUpEditKisi2.EditValue.ToString());
                 rezervasyon.Kisi3 = int.Parse(lookUpEditKisi3.EditValue.ToString());
             }
-
+            rezervasyon.Aciklama = TxtAciklama.Text;
             repo.TUpdate(rezervasyon);
 
-            XtraMessageBox.Show("Rezervasyon başarıyla güncellendi.", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            XtraMessageBox.Show("Rezervasyon başarılı bir şekilde güncellendi.", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+
+            
+            
+
         }
     }
 }

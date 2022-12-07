@@ -66,7 +66,7 @@ namespace OtelProject
             this.BtnWord = new DevExpress.XtraBars.BarButtonItem();
             this.BtnExcel = new DevExpress.XtraBars.BarButtonItem();
             this.BtnSifre = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonItem8 = new DevExpress.XtraBars.BarButtonItem();
+            this.BtnYetkiler = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem9 = new DevExpress.XtraBars.BarButtonItem();
             this.BtnHesapMakinesi = new DevExpress.XtraBars.BarButtonItem();
             this.BtnYeniKayitlar = new DevExpress.XtraBars.BarButtonItem();
@@ -152,7 +152,7 @@ namespace OtelProject
             this.BtnWord,
             this.BtnExcel,
             this.BtnSifre,
-            this.barButtonItem8,
+            this.BtnYetkiler,
             this.barButtonItem9,
             this.BtnHesapMakinesi,
             this.BtnYeniKayitlar,
@@ -479,18 +479,19 @@ namespace OtelProject
             // 
             this.BtnSifre.Caption = "Şifre İşlemleri";
             this.BtnSifre.Id = 36;
-            this.BtnSifre.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem7.ImageOptions.Image")));
-            this.BtnSifre.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem7.ImageOptions.LargeImage")));
+            this.BtnSifre.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BtnSifre.ImageOptions.Image")));
+            this.BtnSifre.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("BtnSifre.ImageOptions.LargeImage")));
             this.BtnSifre.Name = "BtnSifre";
             this.BtnSifre.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.BtnSifre_ItemClick);
             // 
-            // barButtonItem8
+            // BtnYetkiler
             // 
-            this.barButtonItem8.Caption = "Yetkiler";
-            this.barButtonItem8.Id = 37;
-            this.barButtonItem8.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem8.ImageOptions.Image")));
-            this.barButtonItem8.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem8.ImageOptions.LargeImage")));
-            this.barButtonItem8.Name = "barButtonItem8";
+            this.BtnYetkiler.Caption = "Yetkiler";
+            this.BtnYetkiler.Id = 37;
+            this.BtnYetkiler.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem8.ImageOptions.Image")));
+            this.BtnYetkiler.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem8.ImageOptions.LargeImage")));
+            this.BtnYetkiler.Name = "BtnYetkiler";
+            this.BtnYetkiler.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.BtnYetkiler_ItemClick);
             // 
             // barButtonItem9
             // 
@@ -732,7 +733,7 @@ namespace OtelProject
             this.ribbonPageGroup12.ItemLinks.Add(this.BtnWord);
             this.ribbonPageGroup12.ItemLinks.Add(this.BtnExcel);
             this.ribbonPageGroup12.ItemLinks.Add(this.BtnSifre);
-            this.ribbonPageGroup12.ItemLinks.Add(this.barButtonItem8);
+            this.ribbonPageGroup12.ItemLinks.Add(this.BtnYetkiler);
             this.ribbonPageGroup12.ItemLinks.Add(this.barButtonItem9);
             this.ribbonPageGroup12.ItemLinks.Add(this.BtnHesapMakinesi);
             this.ribbonPageGroup12.Name = "ribbonPageGroup12";
@@ -809,13 +810,13 @@ namespace OtelProject
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1434, 611);
+            this.ClientSize = new System.Drawing.Size(1434, 661);
             this.Controls.Add(this.ribbonControl1);
             this.IsMdiContainer = true;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Form1";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Otel Project";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).EndInit();
@@ -880,7 +881,7 @@ namespace OtelProject
         private DevExpress.XtraBars.BarButtonItem BtnWord;
         private DevExpress.XtraBars.BarButtonItem BtnExcel;
         private DevExpress.XtraBars.BarButtonItem BtnSifre;
-        private DevExpress.XtraBars.BarButtonItem barButtonItem8;
+        private DevExpress.XtraBars.BarButtonItem BtnYetkiler;
         private DevExpress.XtraBars.BarButtonItem barButtonItem9;
         private DevExpress.XtraBars.Ribbon.RibbonPage ribbonPage7;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup12;

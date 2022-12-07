@@ -29,6 +29,7 @@ namespace OtelProject.Formlar.Rezervasyon
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmRezervasyonKarti));
             this.labelControl6 = new DevExpress.XtraEditors.LabelControl();
             this.pictureEdit6 = new DevExpress.XtraEditors.PictureEdit();
@@ -76,6 +77,16 @@ namespace OtelProject.Formlar.Rezervasyon
             this.lookUpEditKisi1 = new DevExpress.XtraEditors.LookUpEdit();
             this.labelControl7 = new DevExpress.XtraEditors.LabelControl();
             this.pictureEdit8 = new DevExpress.XtraEditors.PictureEdit();
+            this.groupControl5 = new DevExpress.XtraEditors.GroupControl();
+            this.labelControl14 = new DevExpress.XtraEditors.LabelControl();
+            this.labelControl18 = new DevExpress.XtraEditors.LabelControl();
+            this.pictureEdit13 = new DevExpress.XtraEditors.PictureEdit();
+            this.txtToplam = new DevExpress.XtraEditors.TextEdit();
+            this.labelControl19 = new DevExpress.XtraEditors.LabelControl();
+            this.labelControl12 = new DevExpress.XtraEditors.LabelControl();
+            this.pictureEdit11 = new DevExpress.XtraEditors.PictureEdit();
+            this.txtOdaNo = new DevExpress.XtraEditors.TextEdit();
+            this.behaviorManager1 = new DevExpress.Utils.Behaviors.BehaviorManager(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit6.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lookUpEditOda.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit5.Properties)).BeginInit();
@@ -112,6 +123,13 @@ namespace OtelProject.Formlar.Rezervasyon
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit9.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lookUpEditKisi1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit8.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.groupControl5)).BeginInit();
+            this.groupControl5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit13.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtToplam.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit11.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtOdaNo.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.behaviorManager1)).BeginInit();
             this.SuspendLayout();
             // 
             // labelControl6
@@ -406,7 +424,7 @@ namespace OtelProject.Formlar.Rezervasyon
             // 
             this.TxtTelefon.Location = new System.Drawing.Point(97, 9);
             this.TxtTelefon.Name = "TxtTelefon";
-            this.TxtTelefon.Size = new System.Drawing.Size(141, 20);
+            this.TxtTelefon.Size = new System.Drawing.Size(143, 20);
             this.TxtTelefon.TabIndex = 2;
             // 
             // labelControl17
@@ -421,7 +439,7 @@ namespace OtelProject.Formlar.Rezervasyon
             this.groupControl6.Controls.Add(this.TxtAciklama);
             this.groupControl6.Controls.Add(this.labelControl13);
             this.groupControl6.Controls.Add(this.pictureEdit7);
-            this.groupControl6.Location = new System.Drawing.Point(5, 301);
+            this.groupControl6.Location = new System.Drawing.Point(5, 350);
             this.groupControl6.Name = "groupControl6";
             this.groupControl6.ShowCaption = false;
             this.groupControl6.Size = new System.Drawing.Size(484, 128);
@@ -461,7 +479,7 @@ namespace OtelProject.Formlar.Rezervasyon
             this.groupControl7.Controls.Add(this.BtnGuncelle);
             this.groupControl7.Controls.Add(this.BtnKaydet);
             this.groupControl7.Controls.Add(this.BtnVazgec);
-            this.groupControl7.Location = new System.Drawing.Point(5, 435);
+            this.groupControl7.Location = new System.Drawing.Point(5, 484);
             this.groupControl7.Name = "groupControl7";
             this.groupControl7.ShowCaption = false;
             this.groupControl7.Size = new System.Drawing.Size(484, 51);
@@ -616,11 +634,99 @@ namespace OtelProject.Formlar.Rezervasyon
             this.pictureEdit8.Size = new System.Drawing.Size(25, 25);
             this.pictureEdit8.TabIndex = 0;
             // 
+            // groupControl5
+            // 
+            this.groupControl5.Controls.Add(this.txtOdaNo);
+            this.groupControl5.Controls.Add(this.labelControl12);
+            this.groupControl5.Controls.Add(this.pictureEdit11);
+            this.groupControl5.Controls.Add(this.labelControl14);
+            this.groupControl5.Controls.Add(this.labelControl18);
+            this.groupControl5.Controls.Add(this.pictureEdit13);
+            this.groupControl5.Controls.Add(this.txtToplam);
+            this.groupControl5.Controls.Add(this.labelControl19);
+            this.groupControl5.Location = new System.Drawing.Point(5, 301);
+            this.groupControl5.Name = "groupControl5";
+            this.groupControl5.ShowCaption = false;
+            this.groupControl5.Size = new System.Drawing.Size(484, 43);
+            this.groupControl5.TabIndex = 15;
+            this.groupControl5.Text = "groupControl5";
+            // 
+            // labelControl14
+            // 
+            this.labelControl14.Location = new System.Drawing.Point(0, 0);
+            this.labelControl14.Name = "labelControl14";
+            this.labelControl14.Size = new System.Drawing.Size(0, 13);
+            this.labelControl14.TabIndex = 22;
+            // 
+            // labelControl18
+            // 
+            this.labelControl18.Location = new System.Drawing.Point(38, 12);
+            this.labelControl18.Name = "labelControl18";
+            this.labelControl18.Size = new System.Drawing.Size(34, 13);
+            this.labelControl18.TabIndex = 4;
+            this.labelControl18.Text = "Toplam";
+            // 
+            // pictureEdit13
+            // 
+            this.pictureEdit13.EditValue = ((object)(resources.GetObject("pictureEdit13.EditValue")));
+            this.pictureEdit13.Location = new System.Drawing.Point(5, 5);
+            this.pictureEdit13.Name = "pictureEdit13";
+            this.pictureEdit13.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
+            this.pictureEdit13.Properties.Appearance.Options.UseBackColor = true;
+            this.pictureEdit13.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.pictureEdit13.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
+            this.pictureEdit13.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Stretch;
+            this.pictureEdit13.Size = new System.Drawing.Size(25, 25);
+            this.pictureEdit13.TabIndex = 3;
+            // 
+            // txtToplam
+            // 
+            this.txtToplam.Location = new System.Drawing.Point(97, 9);
+            this.txtToplam.Name = "txtToplam";
+            this.txtToplam.Size = new System.Drawing.Size(143, 20);
+            this.txtToplam.TabIndex = 2;
+            // 
+            // labelControl19
+            // 
+            this.labelControl19.Location = new System.Drawing.Point(0, 0);
+            this.labelControl19.Name = "labelControl19";
+            this.labelControl19.Size = new System.Drawing.Size(0, 13);
+            this.labelControl19.TabIndex = 16;
+            // 
+            // labelControl12
+            // 
+            this.labelControl12.Location = new System.Drawing.Point(276, 12);
+            this.labelControl12.Name = "labelControl12";
+            this.labelControl12.Size = new System.Drawing.Size(36, 13);
+            this.labelControl12.TabIndex = 25;
+            this.labelControl12.Text = "Oda No";
+            // 
+            // pictureEdit11
+            // 
+            this.pictureEdit11.EditValue = ((object)(resources.GetObject("pictureEdit11.EditValue")));
+            this.pictureEdit11.Location = new System.Drawing.Point(246, 5);
+            this.pictureEdit11.Name = "pictureEdit11";
+            this.pictureEdit11.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
+            this.pictureEdit11.Properties.Appearance.Options.UseBackColor = true;
+            this.pictureEdit11.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.pictureEdit11.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
+            this.pictureEdit11.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Stretch;
+            this.pictureEdit11.Size = new System.Drawing.Size(25, 25);
+            this.pictureEdit11.TabIndex = 24;
+            // 
+            // txtOdaNo
+            // 
+            this.txtOdaNo.Location = new System.Drawing.Point(334, 9);
+            this.txtOdaNo.Name = "txtOdaNo";
+            this.txtOdaNo.Size = new System.Drawing.Size(143, 20);
+            this.txtOdaNo.TabIndex = 26;
+            // 
             // FrmRezervasyonKarti
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(494, 493);
+            this.ClientSize = new System.Drawing.Size(494, 544);
+            this.Controls.Add(this.groupControl5);
             this.Controls.Add(this.groupControl4);
             this.Controls.Add(this.groupControl7);
             this.Controls.Add(this.groupControl6);
@@ -674,6 +780,14 @@ namespace OtelProject.Formlar.Rezervasyon
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit9.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.lookUpEditKisi1.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit8.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.groupControl5)).EndInit();
+            this.groupControl5.ResumeLayout(false);
+            this.groupControl5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit13.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtToplam.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit11.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtOdaNo.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.behaviorManager1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -726,5 +840,15 @@ namespace OtelProject.Formlar.Rezervasyon
         private DevExpress.XtraEditors.LookUpEdit lookUpEditKisi1;
         private DevExpress.XtraEditors.LabelControl labelControl7;
         private DevExpress.XtraEditors.PictureEdit pictureEdit8;
+        private DevExpress.XtraEditors.GroupControl groupControl5;
+        private DevExpress.XtraEditors.LabelControl labelControl14;
+        private DevExpress.XtraEditors.LabelControl labelControl18;
+        private DevExpress.XtraEditors.PictureEdit pictureEdit13;
+        private DevExpress.XtraEditors.TextEdit txtToplam;
+        private DevExpress.XtraEditors.LabelControl labelControl19;
+        private DevExpress.XtraEditors.TextEdit txtOdaNo;
+        private DevExpress.XtraEditors.LabelControl labelControl12;
+        private DevExpress.XtraEditors.PictureEdit pictureEdit11;
+        private DevExpress.Utils.Behaviors.BehaviorManager behaviorManager1;
     }
 }
