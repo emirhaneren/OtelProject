@@ -65,7 +65,7 @@ namespace OtelProject
             this.BtnGoogle = new DevExpress.XtraBars.BarButtonItem();
             this.BtnWord = new DevExpress.XtraBars.BarButtonItem();
             this.BtnExcel = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonItem7 = new DevExpress.XtraBars.BarButtonItem();
+            this.BtnSifre = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem8 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem9 = new DevExpress.XtraBars.BarButtonItem();
             this.BtnHesapMakinesi = new DevExpress.XtraBars.BarButtonItem();
@@ -151,7 +151,7 @@ namespace OtelProject
             this.BtnGoogle,
             this.BtnWord,
             this.BtnExcel,
-            this.barButtonItem7,
+            this.BtnSifre,
             this.barButtonItem8,
             this.barButtonItem9,
             this.BtnHesapMakinesi,
@@ -475,13 +475,14 @@ namespace OtelProject
             this.BtnExcel.Name = "BtnExcel";
             this.BtnExcel.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.BtnExcel_ItemClick);
             // 
-            // barButtonItem7
+            // BtnSifre
             // 
-            this.barButtonItem7.Caption = "Şifre İşlemleri";
-            this.barButtonItem7.Id = 36;
-            this.barButtonItem7.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem7.ImageOptions.Image")));
-            this.barButtonItem7.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem7.ImageOptions.LargeImage")));
-            this.barButtonItem7.Name = "barButtonItem7";
+            this.BtnSifre.Caption = "Şifre İşlemleri";
+            this.BtnSifre.Id = 36;
+            this.BtnSifre.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem7.ImageOptions.Image")));
+            this.BtnSifre.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem7.ImageOptions.LargeImage")));
+            this.BtnSifre.Name = "BtnSifre";
+            this.BtnSifre.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.BtnSifre_ItemClick);
             // 
             // barButtonItem8
             // 
@@ -602,8 +603,8 @@ namespace OtelProject
             // 
             this.BtnOdaDolulukGrafigi.Caption = "Oda Doluluk Grafiği";
             this.BtnOdaDolulukGrafigi.Id = 50;
-            this.BtnOdaDolulukGrafigi.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BtnGrafik1.ImageOptions.Image")));
-            this.BtnOdaDolulukGrafigi.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("BtnGrafik1.ImageOptions.LargeImage")));
+            this.BtnOdaDolulukGrafigi.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BtnOdaDolulukGrafigi.ImageOptions.Image")));
+            this.BtnOdaDolulukGrafigi.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("BtnOdaDolulukGrafigi.ImageOptions.LargeImage")));
             this.BtnOdaDolulukGrafigi.Name = "BtnOdaDolulukGrafigi";
             this.BtnOdaDolulukGrafigi.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem2_ItemClick_1);
             // 
@@ -730,7 +731,7 @@ namespace OtelProject
             this.ribbonPageGroup12.ItemLinks.Add(this.BtnGoogle);
             this.ribbonPageGroup12.ItemLinks.Add(this.BtnWord);
             this.ribbonPageGroup12.ItemLinks.Add(this.BtnExcel);
-            this.ribbonPageGroup12.ItemLinks.Add(this.barButtonItem7);
+            this.ribbonPageGroup12.ItemLinks.Add(this.BtnSifre);
             this.ribbonPageGroup12.ItemLinks.Add(this.barButtonItem8);
             this.ribbonPageGroup12.ItemLinks.Add(this.barButtonItem9);
             this.ribbonPageGroup12.ItemLinks.Add(this.BtnHesapMakinesi);
@@ -878,7 +879,7 @@ namespace OtelProject
         private DevExpress.XtraBars.BarButtonItem BtnGoogle;
         private DevExpress.XtraBars.BarButtonItem BtnWord;
         private DevExpress.XtraBars.BarButtonItem BtnExcel;
-        private DevExpress.XtraBars.BarButtonItem barButtonItem7;
+        private DevExpress.XtraBars.BarButtonItem BtnSifre;
         private DevExpress.XtraBars.BarButtonItem barButtonItem8;
         private DevExpress.XtraBars.BarButtonItem barButtonItem9;
         private DevExpress.XtraBars.Ribbon.RibbonPage ribbonPage7;

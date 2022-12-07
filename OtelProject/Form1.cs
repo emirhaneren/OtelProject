@@ -295,7 +295,9 @@ namespace OtelProject
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            Formlar.Ana_Form.FrmAnaForm fr = new Formlar.Ana_Form.FrmAnaForm();
+            fr.MdiParent = this;
+            fr.Show();
         }
 
         private void barButtonItem2_ItemClick_1(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
@@ -309,6 +311,12 @@ namespace OtelProject
         {
             Formlar.Grafikler.FrmUrunStokGrafigi fr = new Formlar.Grafikler.FrmUrunStokGrafigi();
             fr.MdiParent = this;
+            fr.Show();
+        }
+
+        private void BtnSifre_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Formlar.Admin.FrmSifreIslemleri fr = new Formlar.Admin.FrmSifreIslemleri();
             fr.Show();
         }
     }
