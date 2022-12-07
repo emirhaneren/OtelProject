@@ -37,7 +37,7 @@ namespace OtelProject.Formlar.Grafikler
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1184, 461);
             this.Name = "FrmOdaDolulukGrafigi";
-            this.Text = "FrmOdaDolulukGrafigi";
+            this.Text = "Oda Doluluk Grafigi";
             this.ResumeLayout(false);
 
         }

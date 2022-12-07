@@ -307,7 +307,9 @@ namespace OtelProject
 
         private void BtnUrunStokGrafigi_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            
+            Formlar.Grafikler.FrmUrunStokGrafigi fr = new Formlar.Grafikler.FrmUrunStokGrafigi();
+            fr.MdiParent = this;
+            fr.Show();
         }
     }
 }

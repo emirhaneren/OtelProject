@@ -199,6 +199,12 @@
     <Compile Include="Formlar\Grafikler\FrmOdaDolulukGrafigi.Designer.cs">
       <DependentUpon>FrmOdaDolulukGrafigi.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formlar\Grafikler\FrmUrunStokGrafigi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\Grafikler\FrmUrunStokGrafigi.Designer.cs">
+      <DependentUpon>FrmUrunStokGrafigi.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formlar\Misafir\FrmMisafirKarti.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -423,6 +429,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formlar\Grafikler\FrmOdaDolulukGrafigi.resx">
       <DependentUpon>FrmOdaDolulukGrafigi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\Grafikler\FrmUrunStokGrafigi.resx">
+      <DependentUpon>FrmUrunStokGrafigi.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formlar\Misafir\FrmMisafirKarti.resx">
       <DependentUpon>FrmMisafirKarti.cs</DependentUpon>
