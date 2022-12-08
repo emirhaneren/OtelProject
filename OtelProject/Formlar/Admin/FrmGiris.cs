@@ -29,6 +29,7 @@ namespace OtelProject.Formlar.Admin
             if(kullanici != null)
             {
                 Form1 frm = new Form1();
+                frm.kullanicirol = kullanici.Rol;
                 frm.Show();
                 this.Hide();
             }

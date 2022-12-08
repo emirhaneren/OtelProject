@@ -33,6 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="DevExpress.BonusSkins.v22.1, Version=22.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.Charts.v22.1.Core, Version=22.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.Data.Desktop.v22.1, Version=22.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.Drawing.v22.1, Version=22.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
@@ -122,6 +123,9 @@
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Entity\TblKasa.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entity\TblKasaHareketi.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Entity\TblKur.cs">
@@ -231,6 +235,12 @@
     </Compile>
     <Compile Include="Formlar\Grafikler\FrmUrunStokGrafigi.Designer.cs">
       <DependentUpon>FrmUrunStokGrafigi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formlar\Kasa\FrmResepsiyonHareketi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\Kasa\FrmResepsiyonHareketi.Designer.cs">
+      <DependentUpon>FrmResepsiyonHareketi.cs</DependentUpon>
     </Compile>
     <Compile Include="Formlar\Misafir\FrmMisafirKarti.cs">
       <SubType>Form</SubType>
@@ -471,6 +481,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formlar\Grafikler\FrmUrunStokGrafigi.resx">
       <DependentUpon>FrmUrunStokGrafigi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\Kasa\FrmResepsiyonHareketi.resx">
+      <DependentUpon>FrmResepsiyonHareketi.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formlar\Misafir\FrmMisafirKarti.resx">
       <DependentUpon>FrmMisafirKarti.cs</DependentUpon>

@@ -1,7 +1,7 @@
 ﻿
-namespace OtelProject.Formlar.WebSite
+namespace OtelProject.Formlar.Kasa
 {
-    partial class FrmIletisim
+    partial class FrmResepsiyonHareketi
     {
         /// <summary>
         /// Required designer variable.
@@ -41,8 +41,8 @@ namespace OtelProject.Formlar.WebSite
             this.gridControl1.Location = new System.Drawing.Point(0, 0);
             this.gridControl1.MainView = this.gridView1;
             this.gridControl1.Name = "gridControl1";
-            this.gridControl1.Size = new System.Drawing.Size(1168, 422);
-            this.gridControl1.TabIndex = 8;
+            this.gridControl1.Size = new System.Drawing.Size(1184, 461);
+            this.gridControl1.TabIndex = 0;
             this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
             // 
@@ -50,18 +50,18 @@ namespace OtelProject.Formlar.WebSite
             // 
             this.gridView1.GridControl = this.gridControl1;
             this.gridView1.Name = "gridView1";
-            this.gridView1.OptionsView.ShowGroupPanel = false;
-            this.gridView1.DoubleClick += new System.EventHandler(this.gridView1_DoubleClick_1);
             // 
-            // FrmIletisim
+            // FrmResepsiyonHareketi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1168, 422);
+            this.ClientSize = new System.Drawing.Size(1184, 461);
             this.Controls.Add(this.gridControl1);
-            this.Name = "FrmIletisim";
-            this.Text = "İletişim Formu";
-            this.Load += new System.EventHandler(this.FrmIletisim_Load);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
+            this.Name = "FrmResepsiyonHareketi";
+            this.Text = "Resepsiyon Hareketleri";
+            this.Load += new System.EventHandler(this.FrmResepsiyonHareketi_Load);
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
             this.ResumeLayout(false);

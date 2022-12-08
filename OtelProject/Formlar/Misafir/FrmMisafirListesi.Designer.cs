@@ -60,7 +60,7 @@ namespace OtelProject.Formlar.Misafir
             this.ClientSize = new System.Drawing.Size(1084, 471);
             this.Controls.Add(this.gridControl1);
             this.Name = "FrmMisafirListesi";
-            this.Text = "FrmMisafirListesi";
+            this.Text = "Misafir Listesi";
             this.Load += new System.EventHandler(this.FrmMisafirListesi_Load);
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();

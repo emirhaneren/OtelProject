@@ -146,6 +146,15 @@ namespace OtelProject.Formlar.Rezervasyon
                 var odadurum = repo2.Find(x => x.OdaID == rezervasyon.Oda);
                 odadurum.Durum = 3;
                 repo2.TUpdate(odadurum);
+                rezervasyon.KasayaAktar = true;
+                repo.TUpdate(rezervasyon);
+                //Kasaya Aktarma İşlemi
+                TblKasaHareketi tkasa = new TblKasaHareketi();
+                Repository<TblKasaHareketi> repokasa = new Repository<TblKasaHareketi>();
+                tkasa.Misafir = lookUpEditMisafir.Text;
+                tkasa.Tarih = DateTime.Parse(DateTime.Now.ToShortDateString());
+                tkasa.Tutar = decimal.Parse(txtToplam.Text);
+                repokasa.TAdd(tkasa);
             }
            
             rezervasyon.GirisTarih = DateTime.Parse(dateEditGiris.Text);

@@ -59,7 +59,7 @@ namespace OtelProject.Formlar.WebSite
             this.ClientSize = new System.Drawing.Size(1168, 422);
             this.Controls.Add(this.gridControl1);
             this.Name = "FrmYeniKayit";
-            this.Text = "Yeni Kaıt Formu";
+            this.Text = "Yeni Kayıt Formu";
             this.Load += new System.EventHandler(this.FrmYeniKayit_Load);
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();

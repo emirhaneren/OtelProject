@@ -294,9 +294,22 @@ namespace OtelProject
             fr.Show();
         }
 
+        public string kullanicirol;
         private void Form1_Load(object sender, EventArgs e)
         {
+            //this.Text = kullaniciadi.ToString();
+            //ribbonPage6.Visible = false;
             //Thread.Sleep(5000);
+            
+            //Rollere göre gizlenecek sekmeler ve bölümler
+            //if(kullanicirol!="B")
+            //{
+            //    //Tanımlamalar Sekmesini gizle
+            //    ribbonPage6.Visible = false;
+            //    //WebSite Sekmesini gizle
+            //    ribbonPage8.Visible = false;
+            //}
+
             Formlar.Ana_Form.FrmAnaForm fr = new Formlar.Ana_Form.FrmAnaForm();
             fr.MdiParent = this;
             fr.Show();
@@ -325,6 +338,18 @@ namespace OtelProject
         private void BtnYetkiler_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             Formlar.Admin.FrmSifreIslemleri fr = new Formlar.Admin.FrmSifreIslemleri();
+            fr.Show();
+        }
+
+        private void barButtonItem1_ItemClick_2(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+
+        }
+
+        private void BtnResepsiyonHareketi_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Formlar.Kasa.FrmResepsiyonHareketi fr = new Formlar.Kasa.FrmResepsiyonHareketi();
+            fr.MdiParent = this;
             fr.Show();
         }
     }

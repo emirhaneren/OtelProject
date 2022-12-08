@@ -59,7 +59,7 @@ namespace OtelProject.Formlar.Rezervasyon
             this.ClientSize = new System.Drawing.Size(1184, 461);
             this.Controls.Add(this.gridControl1);
             this.Name = "FrmGelecekRezervasyon";
-            this.Text = "FrmGelecekRezervasyon";
+            this.Text = "Gelecek Rezervasyonlar";
             this.Load += new System.EventHandler(this.FrmGelecekRezervasyon_Load);
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();

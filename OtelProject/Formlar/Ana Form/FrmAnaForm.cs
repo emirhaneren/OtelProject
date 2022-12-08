@@ -27,7 +27,7 @@ namespace OtelProject.Formlar.Ana_Form
             gridControl3.DataSource = (from x in db.TblRezervasyon
                                        select new
                                        {
-                                           x.RezervasyonAdSoyad
+                                           x.TblMisafir.AdSoyad
                                        }).ToList();
             //Mesaj Listesi
             gridControl4.DataSource = (from x in db.TblMesaj
