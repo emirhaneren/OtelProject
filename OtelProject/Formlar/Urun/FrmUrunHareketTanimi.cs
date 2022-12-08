@@ -67,6 +67,11 @@ namespace OtelProject.Formlar.Urun
             t.Miktar = decimal.Parse(TxtMiktar.Text);
             t.Aciklama = TxtAciklama.Text;
 
+            if (comboBox1.Text == "Giriş")
+            {
+                t.BirimFiyat = decimal.Parse(txtBirimFiyat.Text);
+                t.ToplamFiyat = decimal.Parse(txtToplam.Text);
+            }
             repo.TAdd(t);
             XtraMessageBox.Show("Ürün Hareketi Listeye Eklendi", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Warning);
         }
@@ -82,6 +87,26 @@ namespace OtelProject.Formlar.Urun
 
             repo.TUpdate(urun);
             XtraMessageBox.Show("Ürün Hareketi Başarılı Bir Şekilde Güncellendi", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+        }
+
+        private void TxtMiktar_TextChanged(object sender, EventArgs e)
+        {
+            //if(TxtMiktar.Text=="")
+            //{
+            //    TxtMiktar.Text = "0";
+            //}
+        }
+
+        private void TxtMiktar_ValueChanged(object sender, EventArgs e)
+        {
+            if (comboBox1.Text == "Giriş")
+            {
+                double miktar, birimfiyat, toplam;
+                miktar = Convert.ToDouble(TxtMiktar.Value);
+                birimfiyat = Convert.ToDouble(txtBirimFiyat.Text);
+                toplam = miktar * birimfiyat;
+                txtToplam.Text = toplam.ToString();
+            }
         }
     }
 }

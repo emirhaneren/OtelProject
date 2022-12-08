@@ -84,6 +84,8 @@ namespace OtelProject
             this.BtnResepsiyonHareketi = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem3 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem4 = new DevExpress.XtraBars.BarButtonItem();
+            this.BtnKasaCikisKarti = new DevExpress.XtraBars.BarButtonItem();
+            this.BtnKasaCikisHareketleri = new DevExpress.XtraBars.BarButtonItem();
             this.ribbonPage1 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPage2 = new DevExpress.XtraBars.Ribbon.RibbonPage();
@@ -175,9 +177,11 @@ namespace OtelProject
             this.barButtonItem1,
             this.BtnResepsiyonHareketi,
             this.barButtonItem3,
-            this.barButtonItem4});
+            this.barButtonItem4,
+            this.BtnKasaCikisKarti,
+            this.BtnKasaCikisHareketleri});
             this.ribbonControl1.Location = new System.Drawing.Point(0, 0);
-            this.ribbonControl1.MaxItemId = 55;
+            this.ribbonControl1.MaxItemId = 57;
             this.ribbonControl1.Name = "ribbonControl1";
             this.ribbonControl1.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.ribbonPage1,
@@ -654,6 +658,24 @@ namespace OtelProject
             this.barButtonItem4.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem4.ImageOptions.LargeImage")));
             this.barButtonItem4.Name = "barButtonItem4";
             // 
+            // BtnKasaCikisKarti
+            // 
+            this.BtnKasaCikisKarti.Caption = "Kasa Çıkış Kartı";
+            this.BtnKasaCikisKarti.Id = 55;
+            this.BtnKasaCikisKarti.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BtnKasaCikisKarti.ImageOptions.Image")));
+            this.BtnKasaCikisKarti.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("BtnKasaCikisKarti.ImageOptions.LargeImage")));
+            this.BtnKasaCikisKarti.Name = "BtnKasaCikisKarti";
+            this.BtnKasaCikisKarti.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.BtnKasaCikisKarti_ItemClick);
+            // 
+            // BtnKasaCikisHareketleri
+            // 
+            this.BtnKasaCikisHareketleri.Caption = "Kasa Çıkış Hareketleri";
+            this.BtnKasaCikisHareketleri.Id = 56;
+            this.BtnKasaCikisHareketleri.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BtnKasaCikisHareketleri.ImageOptions.Image")));
+            this.BtnKasaCikisHareketleri.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("BtnKasaCikisHareketleri.ImageOptions.LargeImage")));
+            this.BtnKasaCikisHareketleri.Name = "BtnKasaCikisHareketleri";
+            this.BtnKasaCikisHareketleri.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.BtnKasaCikisHareketleri_ItemClick);
+            // 
             // ribbonPage1
             // 
             this.ribbonPage1.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
@@ -754,6 +776,8 @@ namespace OtelProject
             this.ribbonPageGroup19.ItemLinks.Add(this.BtnResepsiyonHareketi);
             this.ribbonPageGroup19.ItemLinks.Add(this.barButtonItem3);
             this.ribbonPageGroup19.ItemLinks.Add(this.barButtonItem4);
+            this.ribbonPageGroup19.ItemLinks.Add(this.BtnKasaCikisKarti);
+            this.ribbonPageGroup19.ItemLinks.Add(this.BtnKasaCikisHareketleri);
             this.ribbonPageGroup19.Name = "ribbonPageGroup19";
             // 
             // ribbonPage6
@@ -971,6 +995,8 @@ namespace OtelProject
         private DevExpress.XtraBars.BarButtonItem BtnResepsiyonHareketi;
         private DevExpress.XtraBars.BarButtonItem barButtonItem3;
         private DevExpress.XtraBars.BarButtonItem barButtonItem4;
+        private DevExpress.XtraBars.BarButtonItem BtnKasaCikisKarti;
+        private DevExpress.XtraBars.BarButtonItem BtnKasaCikisHareketleri;
     }
 }
 

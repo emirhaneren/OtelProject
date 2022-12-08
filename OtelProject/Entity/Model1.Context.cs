@@ -54,6 +54,7 @@ namespace OtelProject.Entity
         public virtual DbSet<TblMesaj> TblMesaj { get; set; }
         public virtual DbSet<TblAdmin> TblAdmin { get; set; }
         public virtual DbSet<TblKasaHareketi> TblKasaHareketi { get; set; }
+        public virtual DbSet<TblKasaCikisHareketi> TblKasaCikisHareketi { get; set; }
     
         public virtual ObjectResult<OdaDurum_Result> OdaDurum()
         {

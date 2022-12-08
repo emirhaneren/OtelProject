@@ -343,12 +343,26 @@ namespace OtelProject
 
         private void barButtonItem1_ItemClick_2(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-
+            Formlar.Tanımlamalar.FrmKasa fr = new Formlar.Tanımlamalar.FrmKasa();
+            fr.Show();
         }
 
         private void BtnResepsiyonHareketi_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             Formlar.Kasa.FrmResepsiyonHareketi fr = new Formlar.Kasa.FrmResepsiyonHareketi();
+            fr.MdiParent = this;
+            fr.Show();
+        }
+
+        private void BtnKasaCikisKarti_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Formlar.Kasa.FrmKasaCikisKarti fr = new Formlar.Kasa.FrmKasaCikisKarti();
+            fr.Show();
+        }
+
+        private void BtnKasaCikisHareketleri_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Formlar.Kasa.FrmKasaCikisHareketListesi fr = new Formlar.Kasa.FrmKasaCikisHareketListesi();
             fr.MdiParent = this;
             fr.Show();
         }

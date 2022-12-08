@@ -47,7 +47,6 @@ namespace OtelProject.Formlar.Urun
             this.labelControl9 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl7 = new DevExpress.XtraEditors.LabelControl();
             this.pictureEdit3 = new DevExpress.XtraEditors.PictureEdit();
-            this.TxtMiktar = new DevExpress.XtraEditors.TextEdit();
             this.pictureEdit4 = new DevExpress.XtraEditors.PictureEdit();
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
             this.pictureEdit2 = new DevExpress.XtraEditors.PictureEdit();
@@ -57,6 +56,14 @@ namespace OtelProject.Formlar.Urun
             this.pictureEdit5 = new DevExpress.XtraEditors.PictureEdit();
             this.labelControl5 = new DevExpress.XtraEditors.LabelControl();
             this.textId = new DevExpress.XtraEditors.TextEdit();
+            this.groupControl3 = new DevExpress.XtraEditors.GroupControl();
+            this.pictureEdit6 = new DevExpress.XtraEditors.PictureEdit();
+            this.labelControl6 = new DevExpress.XtraEditors.LabelControl();
+            this.txtBirimFiyat = new DevExpress.XtraEditors.TextEdit();
+            this.pictureEdit7 = new DevExpress.XtraEditors.PictureEdit();
+            this.labelControl8 = new DevExpress.XtraEditors.LabelControl();
+            this.txtToplam = new DevExpress.XtraEditors.TextEdit();
+            this.TxtMiktar = new System.Windows.Forms.NumericUpDown();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl7)).BeginInit();
             this.groupControl7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl6)).BeginInit();
@@ -68,15 +75,21 @@ namespace OtelProject.Formlar.Urun
             ((System.ComponentModel.ISupportInitialize)(this.lookUpEditUrun.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit3.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtMiktar.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit4.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit2.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dateEdit1.Properties.CalendarTimeProperties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateEdit1.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dateEdit1.Properties.CalendarTimeProperties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl2)).BeginInit();
             this.groupControl2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit5.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textId.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.groupControl3)).BeginInit();
+            this.groupControl3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit6.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtBirimFiyat.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit7.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtToplam.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtMiktar)).BeginInit();
             this.SuspendLayout();
             // 
             // groupControl7
@@ -84,7 +97,7 @@ namespace OtelProject.Formlar.Urun
             this.groupControl7.Controls.Add(this.BtnGuncelle);
             this.groupControl7.Controls.Add(this.BtnKaydet);
             this.groupControl7.Controls.Add(this.BtnVazgec);
-            this.groupControl7.Location = new System.Drawing.Point(5, 282);
+            this.groupControl7.Location = new System.Drawing.Point(5, 331);
             this.groupControl7.Name = "groupControl7";
             this.groupControl7.ShowCaption = false;
             this.groupControl7.Size = new System.Drawing.Size(484, 63);
@@ -126,7 +139,7 @@ namespace OtelProject.Formlar.Urun
             this.groupControl6.Controls.Add(this.TxtAciklama);
             this.groupControl6.Controls.Add(this.labelControl13);
             this.groupControl6.Controls.Add(this.pictureEdit13);
-            this.groupControl6.Location = new System.Drawing.Point(5, 156);
+            this.groupControl6.Location = new System.Drawing.Point(5, 205);
             this.groupControl6.Name = "groupControl6";
             this.groupControl6.ShowCaption = false;
             this.groupControl6.Size = new System.Drawing.Size(484, 120);
@@ -251,13 +264,6 @@ namespace OtelProject.Formlar.Urun
             this.pictureEdit3.Size = new System.Drawing.Size(25, 25);
             this.pictureEdit3.TabIndex = 19;
             // 
-            // TxtMiktar
-            // 
-            this.TxtMiktar.Location = new System.Drawing.Point(329, 53);
-            this.TxtMiktar.Name = "TxtMiktar";
-            this.TxtMiktar.Size = new System.Drawing.Size(148, 20);
-            this.TxtMiktar.TabIndex = 18;
-            // 
             // pictureEdit4
             // 
             this.pictureEdit4.EditValue = ((object)(resources.GetObject("pictureEdit4.EditValue")));
@@ -318,6 +324,7 @@ namespace OtelProject.Formlar.Urun
             // 
             // groupControl2
             // 
+            this.groupControl2.Controls.Add(this.TxtMiktar);
             this.groupControl2.Controls.Add(this.pictureEdit5);
             this.groupControl2.Controls.Add(this.labelControl5);
             this.groupControl2.Controls.Add(this.textId);
@@ -327,7 +334,6 @@ namespace OtelProject.Formlar.Urun
             this.groupControl2.Controls.Add(this.labelControl2);
             this.groupControl2.Controls.Add(this.pictureEdit4);
             this.groupControl2.Controls.Add(this.labelControl9);
-            this.groupControl2.Controls.Add(this.TxtMiktar);
             this.groupControl2.Controls.Add(this.labelControl7);
             this.groupControl2.Controls.Add(this.pictureEdit3);
             this.groupControl2.Location = new System.Drawing.Point(5, 57);
@@ -365,11 +371,96 @@ namespace OtelProject.Formlar.Urun
             this.textId.Size = new System.Drawing.Size(145, 20);
             this.textId.TabIndex = 32;
             // 
+            // groupControl3
+            // 
+            this.groupControl3.Controls.Add(this.txtToplam);
+            this.groupControl3.Controls.Add(this.pictureEdit6);
+            this.groupControl3.Controls.Add(this.labelControl6);
+            this.groupControl3.Controls.Add(this.txtBirimFiyat);
+            this.groupControl3.Controls.Add(this.pictureEdit7);
+            this.groupControl3.Controls.Add(this.labelControl8);
+            this.groupControl3.Location = new System.Drawing.Point(5, 156);
+            this.groupControl3.Name = "groupControl3";
+            this.groupControl3.ShowCaption = false;
+            this.groupControl3.Size = new System.Drawing.Size(484, 43);
+            this.groupControl3.TabIndex = 16;
+            this.groupControl3.Text = "groupControl3";
+            // 
+            // pictureEdit6
+            // 
+            this.pictureEdit6.EditValue = ((object)(resources.GetObject("pictureEdit6.EditValue")));
+            this.pictureEdit6.Location = new System.Drawing.Point(7, 5);
+            this.pictureEdit6.Name = "pictureEdit6";
+            this.pictureEdit6.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
+            this.pictureEdit6.Properties.Appearance.Options.UseBackColor = true;
+            this.pictureEdit6.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.pictureEdit6.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
+            this.pictureEdit6.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Stretch;
+            this.pictureEdit6.Size = new System.Drawing.Size(25, 25);
+            this.pictureEdit6.TabIndex = 31;
+            // 
+            // labelControl6
+            // 
+            this.labelControl6.Location = new System.Drawing.Point(38, 12);
+            this.labelControl6.Name = "labelControl6";
+            this.labelControl6.Size = new System.Drawing.Size(49, 13);
+            this.labelControl6.TabIndex = 33;
+            this.labelControl6.Text = "Birim Fiyat";
+            // 
+            // txtBirimFiyat
+            // 
+            this.txtBirimFiyat.Location = new System.Drawing.Point(93, 9);
+            this.txtBirimFiyat.Name = "txtBirimFiyat";
+            this.txtBirimFiyat.Size = new System.Drawing.Size(145, 20);
+            this.txtBirimFiyat.TabIndex = 32;
+            // 
+            // pictureEdit7
+            // 
+            this.pictureEdit7.EditValue = ((object)(resources.GetObject("pictureEdit7.EditValue")));
+            this.pictureEdit7.Location = new System.Drawing.Point(254, 5);
+            this.pictureEdit7.Name = "pictureEdit7";
+            this.pictureEdit7.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
+            this.pictureEdit7.Properties.Appearance.Options.UseBackColor = true;
+            this.pictureEdit7.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.pictureEdit7.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
+            this.pictureEdit7.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Stretch;
+            this.pictureEdit7.Size = new System.Drawing.Size(25, 25);
+            this.pictureEdit7.TabIndex = 3;
+            // 
+            // labelControl8
+            // 
+            this.labelControl8.Location = new System.Drawing.Point(285, 13);
+            this.labelControl8.Name = "labelControl8";
+            this.labelControl8.Size = new System.Drawing.Size(34, 13);
+            this.labelControl8.TabIndex = 4;
+            this.labelControl8.Text = "Toplam";
+            // 
+            // txtToplam
+            // 
+            this.txtToplam.Location = new System.Drawing.Point(329, 10);
+            this.txtToplam.Name = "txtToplam";
+            this.txtToplam.Size = new System.Drawing.Size(148, 20);
+            this.txtToplam.TabIndex = 34;
+            // 
+            // TxtMiktar
+            // 
+            this.TxtMiktar.Location = new System.Drawing.Point(329, 56);
+            this.TxtMiktar.Maximum = new decimal(new int[] {
+            10000,
+            0,
+            0,
+            0});
+            this.TxtMiktar.Name = "TxtMiktar";
+            this.TxtMiktar.Size = new System.Drawing.Size(148, 21);
+            this.TxtMiktar.TabIndex = 34;
+            this.TxtMiktar.ValueChanged += new System.EventHandler(this.TxtMiktar_ValueChanged);
+            // 
             // FrmUrunHareketTanimi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(494, 355);
+            this.ClientSize = new System.Drawing.Size(494, 402);
+            this.Controls.Add(this.groupControl3);
             this.Controls.Add(this.groupControl7);
             this.Controls.Add(this.groupControl2);
             this.Controls.Add(this.groupControl6);
@@ -393,7 +484,6 @@ namespace OtelProject.Formlar.Urun
             ((System.ComponentModel.ISupportInitialize)(this.lookUpEditUrun.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit1.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit3.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtMiktar.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit4.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit2.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateEdit1.Properties.CalendarTimeProperties)).EndInit();
@@ -403,6 +493,14 @@ namespace OtelProject.Formlar.Urun
             this.groupControl2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit5.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textId.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.groupControl3)).EndInit();
+            this.groupControl3.ResumeLayout(false);
+            this.groupControl3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit6.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtBirimFiyat.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit7.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtToplam.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtMiktar)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -426,7 +524,6 @@ namespace OtelProject.Formlar.Urun
         private DevExpress.XtraEditors.LabelControl labelControl9;
         private DevExpress.XtraEditors.LabelControl labelControl7;
         private DevExpress.XtraEditors.PictureEdit pictureEdit3;
-        private DevExpress.XtraEditors.TextEdit TxtMiktar;
         private DevExpress.XtraEditors.PictureEdit pictureEdit4;
         private DevExpress.XtraEditors.LabelControl labelControl2;
         private DevExpress.XtraEditors.PictureEdit pictureEdit2;
@@ -436,5 +533,13 @@ namespace OtelProject.Formlar.Urun
         private DevExpress.XtraEditors.PictureEdit pictureEdit5;
         private DevExpress.XtraEditors.LabelControl labelControl5;
         private DevExpress.XtraEditors.TextEdit textId;
+        private DevExpress.XtraEditors.GroupControl groupControl3;
+        private DevExpress.XtraEditors.PictureEdit pictureEdit6;
+        private DevExpress.XtraEditors.LabelControl labelControl6;
+        private DevExpress.XtraEditors.TextEdit txtBirimFiyat;
+        private DevExpress.XtraEditors.PictureEdit pictureEdit7;
+        private DevExpress.XtraEditors.LabelControl labelControl8;
+        private DevExpress.XtraEditors.TextEdit txtToplam;
+        private System.Windows.Forms.NumericUpDown TxtMiktar;
     }
 }

@@ -125,6 +125,9 @@
     <Compile Include="Entity\TblKasa.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
+    <Compile Include="Entity\TblKasaCikisHareketi.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
     <Compile Include="Entity\TblKasaHareketi.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
@@ -235,6 +238,18 @@
     </Compile>
     <Compile Include="Formlar\Grafikler\FrmUrunStokGrafigi.Designer.cs">
       <DependentUpon>FrmUrunStokGrafigi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formlar\Kasa\FrmKasaCikisKarti.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\Kasa\FrmKasaCikisKarti.Designer.cs">
+      <DependentUpon>FrmKasaCikisKarti.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formlar\Kasa\FrmKasaCikisHareketListesi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\Kasa\FrmKasaCikisHareketListesi.Designer.cs">
+      <DependentUpon>FrmKasaCikisHareketListesi.cs</DependentUpon>
     </Compile>
     <Compile Include="Formlar\Kasa\FrmResepsiyonHareketi.cs">
       <SubType>Form</SubType>
@@ -481,6 +496,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formlar\Grafikler\FrmUrunStokGrafigi.resx">
       <DependentUpon>FrmUrunStokGrafigi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\Kasa\FrmKasaCikisKarti.resx">
+      <DependentUpon>FrmKasaCikisKarti.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\Kasa\FrmKasaCikisHareketListesi.resx">
+      <DependentUpon>FrmKasaCikisHareketListesi.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formlar\Kasa\FrmResepsiyonHareketi.resx">
       <DependentUpon>FrmResepsiyonHareketi.cs</DependentUpon>

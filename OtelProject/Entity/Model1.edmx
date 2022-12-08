@@ -113,6 +113,15 @@
           <Property Name="Cikan" Type="decimal" Precision="18" Scale="2" />
           <Property Name="Durum" Type="int" />
         </EntityType>
+        <EntityType Name="TblKasaCikisHareketi">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Aciklama" Type="nvarchar" MaxLength="250" />
+          <Property Name="Tarih" Type="date" />
+          <Property Name="Tutar" Type="decimal" Precision="18" Scale="2" />
+        </EntityType>
         <EntityType Name="TblKasaHareketi">
           <Key>
             <PropertyRef Name="ID" />
@@ -286,6 +295,8 @@
           <Property Name="Miktar" Type="decimal" Precision="18" Scale="2" />
           <Property Name="Tarih" Type="date" />
           <Property Name="Aciklama" Type="nvarchar" MaxLength="1000" />
+          <Property Name="BirimFiyat" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="ToplamFiyat" Type="decimal" Precision="18" Scale="2" />
         </EntityType>
         <EntityType Name="TblYeniKayit">
           <Key>
@@ -575,6 +586,7 @@
           <EntitySet Name="TblHakkimda" EntityType="Self.TblHakkimda" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Tbliletisim" EntityType="Self.Tbliletisim" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="TblKasa" EntityType="Self.TblKasa" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="TblKasaCikisHareketi" EntityType="Self.TblKasaCikisHareketi" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="TblKasaHareketi" EntityType="Self.TblKasaHareketi" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="TblKur" EntityType="Self.TblKur" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="TblMesaj" EntityType="Self.TblMesaj" Schema="dbo" store:Type="Tables" />
@@ -1187,6 +1199,7 @@
           <FunctionImport Name="OdaDurum" ReturnType="Collection(DbOtelModel.OdaDurum_Result)" />
           <EntitySet Name="TblAdmin" EntityType="DbOtelModel.TblAdmin" />
           <EntitySet Name="TblKasaHareketi" EntityType="DbOtelModel.TblKasaHareketi" />
+          <EntitySet Name="TblKasaCikisHareketi" EntityType="DbOtelModel.TblKasaCikisHareketi" />
         </EntityContainer>
         <EntityType Name="ilceler">
           <Key>
@@ -1254,6 +1267,8 @@
           <Property Name="Tarih" Type="DateTime" Precision="0" />
           <Property Name="Aciklama" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
           <NavigationProperty Name="TblUrun" Relationship="DbOtelModel.FK_TblUrunHareket_TblUrun" FromRole="TblUrunHareket" ToRole="TblUrun" />
+          <Property Name="BirimFiyat" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="ToplamFiyat" Type="Decimal" Precision="18" Scale="2" />
         </EntityType>
         <Association Name="FK_TblUrunHareket_TblUrun">
           <End Type="DbOtelModel.TblUrun" Role="TblUrun" Multiplicity="0..1" />
@@ -1420,6 +1435,15 @@
           </Key>
           <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="Misafir" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Tarih" Type="DateTime" Precision="0" />
+          <Property Name="Tutar" Type="Decimal" Precision="18" Scale="2" />
+        </EntityType>
+        <EntityType Name="TblKasaCikisHareketi">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Aciklama" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
           <Property Name="Tarih" Type="DateTime" Precision="0" />
           <Property Name="Tutar" Type="Decimal" Precision="18" Scale="2" />
         </EntityType>
@@ -1616,6 +1640,8 @@
           <EntitySetMapping Name="TblUrunHareket">
             <EntityTypeMapping TypeName="DbOtelModel.TblUrunHareket">
               <MappingFragment StoreEntitySet="TblUrunHareket">
+                <ScalarProperty Name="ToplamFiyat" ColumnName="ToplamFiyat" />
+                <ScalarProperty Name="BirimFiyat" ColumnName="BirimFiyat" />
                 <ScalarProperty Name="Aciklama" ColumnName="Aciklama" />
                 <ScalarProperty Name="Tarih" ColumnName="Tarih" />
                 <ScalarProperty Name="Miktar" ColumnName="Miktar" />
@@ -1752,6 +1778,16 @@
                 <ScalarProperty Name="Tutar" ColumnName="Tutar" />
                 <ScalarProperty Name="Tarih" ColumnName="Tarih" />
                 <ScalarProperty Name="Misafir" ColumnName="Misafir" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TblKasaCikisHareketi">
+            <EntityTypeMapping TypeName="DbOtelModel.TblKasaCikisHareketi">
+              <MappingFragment StoreEntitySet="TblKasaCikisHareketi">
+                <ScalarProperty Name="Tutar" ColumnName="Tutar" />
+                <ScalarProperty Name="Tarih" ColumnName="Tarih" />
+                <ScalarProperty Name="Aciklama" ColumnName="Aciklama" />
                 <ScalarProperty Name="ID" ColumnName="ID" />
               </MappingFragment>
             </EntityTypeMapping>
