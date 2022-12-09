@@ -300,15 +300,15 @@ namespace OtelProject
             //this.Text = kullaniciadi.ToString();
             //ribbonPage6.Visible = false;
             //Thread.Sleep(5000);
-            
+
             //Rollere göre gizlenecek sekmeler ve bölümler
-            //if(kullanicirol!="B")
-            //{
-            //    //Tanımlamalar Sekmesini gizle
-            //    ribbonPage6.Visible = false;
-            //    //WebSite Sekmesini gizle
-            //    ribbonPage8.Visible = false;
-            //}
+            if (kullanicirol != "B")
+            {
+                //Tanımlamalar Sekmesini gizle
+                ribbonPage6.Visible = false;
+                //WebSite Sekmesini gizle
+                ribbonPage8.Visible = false;
+            }
 
             Formlar.Ana_Form.FrmAnaForm fr = new Formlar.Ana_Form.FrmAnaForm();
             fr.MdiParent = this;
@@ -365,6 +365,22 @@ namespace OtelProject
             Formlar.Kasa.FrmKasaCikisHareketListesi fr = new Formlar.Kasa.FrmKasaCikisHareketListesi();
             fr.MdiParent = this;
             fr.Show();
+        }
+
+        private void barButtonItem2_ItemClick_2(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Formlar.Raporlar.FrmRapor fr = new Formlar.Raporlar.FrmRapor();
+            fr.Show();
+        }
+
+        private void Form1_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            
+        }
+
+        private void Form1_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

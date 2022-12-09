@@ -32,6 +32,9 @@ namespace OtelProject.Formlar.Admin
                 frm.kullanicirol = kullanici.Rol;
                 frm.Show();
                 this.Hide();
+
+                //frm.Close();
+                //this.Close();
             }
             else
             {
@@ -41,7 +44,7 @@ namespace OtelProject.Formlar.Admin
 
         private void FrmGiris_Load(object sender, EventArgs e)
         {
-            Thread.Sleep(5000);
+            Thread.Sleep(2500);
         }
     }
 }

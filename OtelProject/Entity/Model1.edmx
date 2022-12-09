@@ -488,6 +488,18 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
+        <Association Name="FK_TblRezervasyon_TblMisafir">
+          <End Role="TblMisafir" Type="Self.TblMisafir" Multiplicity="0..1" />
+          <End Role="TblRezervasyon" Type="Self.TblRezervasyon" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TblMisafir">
+              <PropertyRef Name="MisafirID" />
+            </Principal>
+            <Dependent Role="TblRezervasyon">
+              <PropertyRef Name="Misafir" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
         <Association Name="FK_TblRezervasyon_TblOda">
           <End Role="TblOda" Type="Self.TblOda" Multiplicity="0..1" />
           <End Role="TblRezervasyon" Type="Self.TblRezervasyon" Multiplicity="*" />
@@ -660,6 +672,10 @@
           </AssociationSet>
           <AssociationSet Name="FK_TblRezervasyon_TblDurum" Association="Self.FK_TblRezervasyon_TblDurum">
             <End Role="TblDurum" EntitySet="TblDurum" />
+            <End Role="TblRezervasyon" EntitySet="TblRezervasyon" />
+          </AssociationSet>
+          <AssociationSet Name="FK_TblRezervasyon_TblMisafir" Association="Self.FK_TblRezervasyon_TblMisafir">
+            <End Role="TblMisafir" EntitySet="TblMisafir" />
             <End Role="TblRezervasyon" EntitySet="TblRezervasyon" />
           </AssociationSet>
           <AssociationSet Name="FK_TblRezervasyon_TblOda" Association="Self.FK_TblRezervasyon_TblOda">

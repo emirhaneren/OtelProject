@@ -86,6 +86,7 @@ namespace OtelProject
             this.barButtonItem4 = new DevExpress.XtraBars.BarButtonItem();
             this.BtnKasaCikisKarti = new DevExpress.XtraBars.BarButtonItem();
             this.BtnKasaCikisHareketleri = new DevExpress.XtraBars.BarButtonItem();
+            this.BtnRaporSihirbazi = new DevExpress.XtraBars.BarButtonItem();
             this.ribbonPage1 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPage2 = new DevExpress.XtraBars.Ribbon.RibbonPage();
@@ -113,6 +114,8 @@ namespace OtelProject
             this.ribbonPageGroup15 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup16 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup17 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.ribbonPage11 = new DevExpress.XtraBars.Ribbon.RibbonPage();
+            this.ribbonPageGroup20 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.xtraTabbedMdiManager1 = new DevExpress.XtraTabbedMdi.XtraTabbedMdiManager(this.components);
             this.ribbonPageGroup10 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup11 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
@@ -179,9 +182,10 @@ namespace OtelProject
             this.barButtonItem3,
             this.barButtonItem4,
             this.BtnKasaCikisKarti,
-            this.BtnKasaCikisHareketleri});
+            this.BtnKasaCikisHareketleri,
+            this.BtnRaporSihirbazi});
             this.ribbonControl1.Location = new System.Drawing.Point(0, 0);
-            this.ribbonControl1.MaxItemId = 57;
+            this.ribbonControl1.MaxItemId = 58;
             this.ribbonControl1.Name = "ribbonControl1";
             this.ribbonControl1.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.ribbonPage1,
@@ -193,7 +197,8 @@ namespace OtelProject
             this.ribbonPage6,
             this.ribbonPage7,
             this.ribbonPage9,
-            this.ribbonPage8});
+            this.ribbonPage8,
+            this.ribbonPage11});
             this.ribbonControl1.Size = new System.Drawing.Size(1434, 150);
             // 
             // BtnMisafirListesi
@@ -676,6 +681,15 @@ namespace OtelProject
             this.BtnKasaCikisHareketleri.Name = "BtnKasaCikisHareketleri";
             this.BtnKasaCikisHareketleri.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.BtnKasaCikisHareketleri_ItemClick);
             // 
+            // BtnRaporSihirbazi
+            // 
+            this.BtnRaporSihirbazi.Caption = "Rapor Sihirbazı";
+            this.BtnRaporSihirbazi.Id = 57;
+            this.BtnRaporSihirbazi.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BtnRaporSihirbazi.ImageOptions.Image")));
+            this.BtnRaporSihirbazi.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("BtnRaporSihirbazi.ImageOptions.LargeImage")));
+            this.BtnRaporSihirbazi.Name = "BtnRaporSihirbazi";
+            this.BtnRaporSihirbazi.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem2_ItemClick_2);
+            // 
             // ribbonPage1
             // 
             this.ribbonPage1.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
@@ -874,6 +888,18 @@ namespace OtelProject
             this.ribbonPageGroup17.ItemLinks.Add(this.BtnHakkimdaKarti);
             this.ribbonPageGroup17.Name = "ribbonPageGroup17";
             // 
+            // ribbonPage11
+            // 
+            this.ribbonPage11.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
+            this.ribbonPageGroup20});
+            this.ribbonPage11.Name = "ribbonPage11";
+            this.ribbonPage11.Text = "Raporlar";
+            // 
+            // ribbonPageGroup20
+            // 
+            this.ribbonPageGroup20.ItemLinks.Add(this.BtnRaporSihirbazi);
+            this.ribbonPageGroup20.Name = "ribbonPageGroup20";
+            // 
             // xtraTabbedMdiManager1
             // 
             this.xtraTabbedMdiManager1.MdiParent = this;
@@ -902,6 +928,8 @@ namespace OtelProject
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Otel Project";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Form1_FormClosed);
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabbedMdiManager1)).EndInit();
@@ -997,6 +1025,9 @@ namespace OtelProject
         private DevExpress.XtraBars.BarButtonItem barButtonItem4;
         private DevExpress.XtraBars.BarButtonItem BtnKasaCikisKarti;
         private DevExpress.XtraBars.BarButtonItem BtnKasaCikisHareketleri;
+        private DevExpress.XtraBars.BarButtonItem BtnRaporSihirbazi;
+        private DevExpress.XtraBars.Ribbon.RibbonPage ribbonPage11;
+        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup20;
     }
 }
 

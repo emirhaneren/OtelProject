@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XtraReportsLayoutSerializer SerializerVersion="22.1.6.0" Ref="1" ControlType="DevExpress.XtraReports.UI.XtraReport, DevExpress.XtraReports.v22.1, Version=22.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Name="Report1" SnapGridSize="25" ReportUnit="TenthsOfAMillimeter" Margins="254, 254, 254, 254" PaperKind="A4" PageWidth="2100" PageHeight="2970" Version="22.1" DataMember="TblMisafir" DataSource="#Ref-0" Dpi="254" Font="Arial, 9.75pt">
+  <Bands>
+    <Item1 Ref="2" ControlType="TopMarginBand" Name="TopMargin" HeightF="254" Dpi="254">
+      <Controls>
+        <Item1 Ref="3" ControlType="XRLabel" Name="label8" Multiline="true" Text="Mvc Proje Oteli ~ Emirhan EREN" SizeF="402.828,30.30803" LocationFloat="0,223.691971" Dpi="254" Font="Arial, 6.75pt, style=Italic" Padding="2,2,0,0,96">
+          <StylePriority Ref="4" UseFont="false" />
+        </Item1>
+        <Item2 Ref="5" ControlType="XRPictureBox" Name="pictureBox1" ImageUrl="C:\Users\emirh\source\repos\OtelProject\ImageSource\hotel-logo.png" Sizing="ZoomImage" SizeF="292.0338,174.625" LocationFloat="1299.96619,79.375" Dpi="254" />
+      </Controls>
+    </Item1>
+    <Item2 Ref="6" ControlType="BottomMarginBand" Name="BottomMargin" HeightF="254" Dpi="254">
+      <Controls>
+        <Item1 Ref="7" ControlType="XRPageInfo" Name="pageInfo1" PageInfo="DateTime" SizeF="796,58" LocationFloat="0,0" Dpi="254" StyleName="PageInfo" />
+        <Item2 Ref="8" ControlType="XRPageInfo" Name="pageInfo2" TextFormatString="Sayfa {0} / {1}" TextAlignment="TopRight" SizeF="796,58" LocationFloat="796,0" Dpi="254" StyleName="PageInfo" />
+      </Controls>
+    </Item2>
+    <Item3 Ref="9" ControlType="ReportHeaderBand" Name="ReportHeader" HeightF="149.489517" Dpi="254">
+      <Controls>
+        <Item1 Ref="10" ControlType="XRLabel" Name="label1" Text="Misafir İletişim Raporları" TextAlignment="TopCenter" SizeF="1592,61.45361" LocationFloat="0,0" Dpi="254" StyleName="Title" Font="Arial, 14.25pt, style=Bold" ForeColor="255,240,0,0">
+          <StylePriority Ref="11" UseFont="false" UseForeColor="false" UseTextAlignment="false" />
+        </Item1>
+      </Controls>
+    </Item3>
+    <Item4 Ref="12" ControlType="GroupHeaderBand" Name="GroupHeader1" GroupUnion="WithFirstDetail" HeightF="71.12" Dpi="254">
+      <Controls>
+        <Item1 Ref="13" ControlType="XRLabel" Name="label7" Multiline="true" Text="Telefon" SizeF="325.10675,58.4199944" LocationFloat="931.333435,0" Dpi="254" Font="Arial, 9.75pt, style=Bold" Padding="2,2,0,0,96">
+          <StylePriority Ref="14" UseFont="false" />
+        </Item1>
+        <Item2 Ref="15" ControlType="XRLabel" Name="label6" Multiline="true" Text="e-Mail" SizeF="406.135437,58.4199944" LocationFloat="447.476563,0" Dpi="254" Font="Arial, 9.75pt, style=Bold" Padding="2,2,0,0,96">
+          <StylePriority Ref="16" UseFont="false" />
+        </Item2>
+        <Item3 Ref="17" ControlType="XRLabel" Name="label5" Multiline="true" Text="Ad Soyad" SizeF="323.453125,58.4199944" LocationFloat="0,0" Dpi="254" Font="Arial, 9.75pt, style=Bold" Padding="2,2,0,0,96">
+          <StylePriority Ref="18" UseFont="false" />
+        </Item3>
+      </Controls>
+    </Item4>
+    <Item5 Ref="19" ControlType="DetailBand" Name="Detail" HeightF="71.11999" Dpi="254">
+      <HierarchyPrintOptions Ref="20" Indent="50.8" />
+      <Controls>
+        <Item1 Ref="21" ControlType="XRLabel" Name="label4" Multiline="true" Text="label4" SizeF="325.10675,71.11999" LocationFloat="931.333435,0" Dpi="254" Padding="2,2,0,0,96">
+          <ExpressionBindings>
+            <Item1 Ref="22" EventName="BeforePrint" PropertyName="Text" Expression="[Telefon]" />
+          </ExpressionBindings>
+        </Item1>
+        <Item2 Ref="23" ControlType="XRLabel" Name="label3" Multiline="true" Text="label3" SizeF="406.135437,71.11999" LocationFloat="447.476563,0" Dpi="254" Padding="2,2,0,0,96">
+          <ExpressionBindings>
+            <Item1 Ref="24" EventName="BeforePrint" PropertyName="Text" Expression="[Mail]" />
+          </ExpressionBindings>
+        </Item2>
+        <Item3 Ref="25" ControlType="XRLabel" Name="label2" Multiline="true" Text="label2" SizeF="323.453125,71.11999" LocationFloat="0,0" Dpi="254" Padding="5,5,0,0,254">
+          <ExpressionBindings>
+            <Item1 Ref="26" EventName="BeforePrint" PropertyName="Text" Expression="[AdSoyad]" />
+          </ExpressionBindings>
+        </Item3>
+      </Controls>
+    </Item5>
+  </Bands>
+  <StyleSheet>
+    <Item1 Ref="27" Name="Title" BorderStyle="Inset" Padding="15,15,0,0,254" Font="Arial, 14.25pt" ForeColor="255,75,75,75" BackColor="Transparent" BorderColor="Black" Sides="None" StringFormat="Near;Near;0;None;Character;GenericDefault" BorderWidthSerializable="1" />
+    <Item2 Ref="28" Name="DetailCaption1" BorderStyle="Inset" Padding="15,15,0,0,254" Font="Arial, 8.25pt, style=Bold" ForeColor="White" BackColor="255,75,75,75" BorderColor="White" Sides="Left" StringFormat="Near;Center;0;None;Character;GenericDefault" TextAlignment="MiddleLeft" BorderWidthSerializable="2" />
+    <Item3 Ref="29" Name="DetailData1" BorderStyle="Inset" Padding="15,15,0,0,254" Font="Arial, 8.25pt" ForeColor="Black" BorderColor="Transparent" Sides="Left" StringFormat="Near;Center;0;None;Character;GenericDefault" TextAlignment="MiddleLeft" BorderWidthSerializable="2" />
+    <Item4 Ref="30" Name="DetailData3_Odd" BorderStyle="Inset" Padding="15,15,0,0,254" Font="Arial, 8.25pt" ForeColor="Black" BackColor="255,231,231,231" BorderColor="Transparent" Sides="None" StringFormat="Near;Center;0;None;Character;GenericDefault" TextAlignment="MiddleLeft" BorderWidthSerializable="1" />
+    <Item5 Ref="31" Name="PageInfo" BorderStyle="Inset" Padding="15,15,0,0,254" Font="Arial, 8.25pt, style=Bold" ForeColor="255,75,75,75" StringFormat="Near;Near;0;None;Character;GenericDefault" />
+  </StyleSheet>
+  <ComponentStorage>
+    <Item1 Ref="0" ObjectType="DevExpress.DataAccess.Sql.SqlDataSource,DevExpress.DataAccess.v22.1" Name="sqlDataSource1" Base64="PFNxbERhdGFTb3VyY2UgTmFtZT0ic3FsRGF0YVNvdXJjZTEiPjxDb25uZWN0aW9uIE5hbWU9ImxvY2FsaG9zdF9EYk90ZWxfQ29ubmVjdGlvbiIgRnJvbUFwcENvbmZpZz0idHJ1ZSIgLz48UXVlcnkgVHlwZT0iU2VsZWN0UXVlcnkiIE5hbWU9IlRibE1pc2FmaXIiPjxUYWJsZXM+PFRhYmxlIE5hbWU9IlRibE1pc2FmaXIiIC8+PC9UYWJsZXM+PENvbHVtbnM+PENvbHVtbiBUYWJsZT0iVGJsTWlzYWZpciIgTmFtZT0iTWlzYWZpcklEIiAvPjxDb2x1bW4gVGFibGU9IlRibE1pc2FmaXIiIE5hbWU9IkFkU295YWQiIC8+PENvbHVtbiBUYWJsZT0iVGJsTWlzYWZpciIgTmFtZT0iVEMiIC8+PENvbHVtbiBUYWJsZT0iVGJsTWlzYWZpciIgTmFtZT0iTWFpbCIgLz48Q29sdW1uIFRhYmxlPSJUYmxNaXNhZmlyIiBOYW1lPSJUZWxlZm9uIiAvPjxDb2x1bW4gVGFibGU9IlRibE1pc2FmaXIiIE5hbWU9IkFkcmVzIiAvPjxDb2x1bW4gVGFibGU9IlRibE1pc2FmaXIiIE5hbWU9IkFjaWtsYW1hIiAvPjxDb2x1bW4gVGFibGU9IlRibE1pc2FmaXIiIE5hbWU9IktpbWxpa0ZvdG8xIiAvPjxDb2x1bW4gVGFibGU9IlRibE1pc2FmaXIiIE5hbWU9IktpbWxpa0ZvdG8yIiAvPjxDb2x1bW4gVGFibGU9IlRibE1pc2FmaXIiIE5hbWU9IlVsa2UiIC8+PENvbHVtbiBUYWJsZT0iVGJsTWlzYWZpciIgTmFtZT0iU2VoaXIiIC8+PENvbHVtbiBUYWJsZT0iVGJsTWlzYWZpciIgTmFtZT0iSWxjZSIgLz48Q29sdW1uIFRhYmxlPSJUYmxNaXNhZmlyIiBOYW1lPSJEdXJ1bSIgLz48L0NvbHVtbnM+PC9RdWVyeT48UmVzdWx0U2NoZW1hPjxEYXRhU2V0IE5hbWU9InNxbERhdGFTb3VyY2UxIj48VmlldyBOYW1lPSJUYmxNaXNhZmlyIj48RmllbGQgTmFtZT0iTWlzYWZpcklEIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iQWRTb3lhZCIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJUQyIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJNYWlsIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IlRlbGVmb24iIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iQWRyZXMiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iQWNpa2xhbWEiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iS2ltbGlrRm90bzEiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iS2ltbGlrRm90bzIiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iVWxrZSIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IlNlaGlyIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iSWxjZSIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkR1cnVtIiBUeXBlPSJJbnQzMiIgLz48L1ZpZXc+PC9EYXRhU2V0PjwvUmVzdWx0U2NoZW1hPjxDb25uZWN0aW9uT3B0aW9ucyBDbG9zZUNvbm5lY3Rpb249InRydWUiIC8+PC9TcWxEYXRhU291cmNlPg==" />
+  </ComponentStorage>
+</XtraReportsLayoutSerializer>
