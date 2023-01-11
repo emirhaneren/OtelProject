@@ -77,6 +77,11 @@ namespace OtelProject.Formlar.Tanımlamalar
         {
             this.Close();
         }
+
+        private void contextMenuStrip1_Opening(object sender, CancelEventArgs e)
+        {
+
+        }
         /////////////////////////////////////////////////
     }
 }
