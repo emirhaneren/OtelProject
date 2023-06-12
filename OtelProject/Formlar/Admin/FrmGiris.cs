@@ -46,5 +46,10 @@ namespace OtelProject.Formlar.Admin
         {
             Thread.Sleep(2500);
         }
+
+        private void groupControl4_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

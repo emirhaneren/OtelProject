@@ -29,8 +29,8 @@ namespace OtelProject.Formlar.Admin
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmGiris));
             DevExpress.XtraSplashScreen.SplashScreenManager splashScreenManager1 = new DevExpress.XtraSplashScreen.SplashScreenManager(this, typeof(global::OtelProject.Formlar.Admin.SplashScreen1), true, true);
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmGiris));
             this.BtnGiris = new DevExpress.XtraEditors.SimpleButton();
             this.groupControl4 = new DevExpress.XtraEditors.GroupControl();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
@@ -46,6 +46,10 @@ namespace OtelProject.Formlar.Admin
             ((System.ComponentModel.ISupportInitialize)(this.txtSifre.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtKullanici.Properties)).BeginInit();
             this.SuspendLayout();
+            // 
+            // splashScreenManager1
+            // 
+            splashScreenManager1.ClosingDelay = 500;
             // 
             // BtnGiris
             // 
@@ -74,6 +78,7 @@ namespace OtelProject.Formlar.Admin
             this.groupControl4.Size = new System.Drawing.Size(281, 150);
             this.groupControl4.TabIndex = 9;
             this.groupControl4.Text = "groupControl4";
+            this.groupControl4.Paint += new System.Windows.Forms.PaintEventHandler(this.groupControl4_Paint);
             // 
             // labelControl1
             // 
@@ -131,10 +136,6 @@ namespace OtelProject.Formlar.Admin
             this.txtKullanici.Name = "txtKullanici";
             this.txtKullanici.Size = new System.Drawing.Size(136, 20);
             this.txtKullanici.TabIndex = 1;
-            // 
-            // splashScreenManager1
-            // 
-            splashScreenManager1.ClosingDelay = 500;
             // 
             // FrmGiris
             // 
